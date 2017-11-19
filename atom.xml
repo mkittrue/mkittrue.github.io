@@ -41,6 +41,30 @@
   </entry>
   
   <entry>
+    <title>这病得治</title>
+    <link href="http://yoursite.com/2017/11/19/2017119/"/>
+    <id>http://yoursite.com/2017/11/19/2017119/</id>
+    <published>2017-11-19T07:27:33.000Z</published>
+    <updated>2017-11-19T14:07:21.018Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div><script>new APlayer({element: document.getElementById("aplayer0"),narrow: false,autoplay: true,showlrc: 0,music: {title: "后来",author: "刘若英",url: "http://ozjh9fb7b.bkt.clouddn.com/%E5%90%8E%E6%9D%A5.mp3",pic: "",}});</script><p>&#160; &#160; &#160; &#160;有点无奈，有点不甘心，还有点心疼，特么的，自己将来有一天肯定会后悔的，看来还是太闲了</p>]]></content>
+    
+    <summary type="html">
+    
+      该敲点啥，好吧，又矫情了
+    
+    </summary>
+    
+      <category term="职场进阶" scheme="http://yoursite.com/categories/%E8%81%8C%E5%9C%BA%E8%BF%9B%E9%98%B6/"/>
+    
+    
+      <category term="前端开发" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="框架" scheme="http://yoursite.com/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>本科学习报告（本科阶段写的，摘上来充数）</title>
     <link href="http://yoursite.com/2017/11/17/my-second-blog/"/>
     <id>http://yoursite.com/2017/11/17/my-second-blog/</id>
