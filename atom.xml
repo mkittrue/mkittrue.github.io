@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-20T00:25:41.542Z</updated>
+  <updated>2017-11-20T13:24:44.407Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java web整合开发一</title>
+    <link href="http://yoursite.com/2017/11/20/Java%20Web%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%911/"/>
+    <id>http://yoursite.com/2017/11/20/Java Web整合开发1/</id>
+    <published>2017-11-20T12:30:33.000Z</published>
+    <updated>2017-11-20T13:24:44.407Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div><script>new APlayer({element: document.getElementById("aplayer0"),narrow: false,autoplay: true,showlrc: 0,music: {title: "白龙马",author: "樊竹青",url: "http://ozjh9fb7b.bkt.clouddn.com/%E6%A8%8A%E7%AB%B9%E9%9D%92%20-%20%E7%99%BD%E9%BE%99%E9%A9%AC.mp3",pic: "",}});</script><h1 id="静态页面"><a href="#静态页面" class="headerlink" title="静态页面"></a>静态页面</h1><p>&#160; &#160; 单纯的用Html、CSS（负责对Html整体管理，可以内嵌到Html语言，也可以单独编写成文件，在Html语言中外部引用）语言编写的页面，其特点就是“死的”，无法与外部进行交互，就像搭建的博客本身，呈现给读者的只是一个单纯的网页，这个网页除了开发者从后台操作之外，并不会“动”</p><p>&#160;&#160;为了让网页“活起来”，CGI（Common Gateway interface，公共网关接口）诞生了，特点是运行在服务器端，根据不同客户端请求输出相应的HTML页面，然后Web服务器再把这个静态页面返回给浏览器作为客户端的响应。</p><pre><code>                                                                    ***********服务器端**********                                                                    *                            *                                                                    *                             *        1.输出URL地址   *              2.向服务器发送浏览请求  3.请求运行                    5.输出生成    **********************            *************************   某个CGI程序                 HTML语言                        *                                            *                              *用户                        客户端                                  *                            *     *                        浏览器     *                                 * *                         * *        **********************            *************************       *                           *     *    7.显示HTML                     * 6.返回HTML页面作出响应          CGI程序生成所需的HTML文件                                                                                    *                                                                                                   *                                                                          4.读取数据库或者文件                                                                                   *                                                                                   *                                                                                  数据库                                          CGI的操作过程</code></pre><p>类比java程序，CGI程序的语言主要有两种Perl和shell脚本(java，c，c++均可)，CGI可以访问存储数据库中的数据或者其他系统中的文件，实现动态生成效果。<br>不足之处：<br>    每个请求均需要启动一个可执行的CGI程序，如果请求频繁。。。<br>    为了解决这个问题，改进的CGI诞生了，即所谓的Java Servert</p><pre><code>Servert的模板：JSP（Java Server Pages）*******实现普通静态html和动态html混合编码，其是Servlet API的扩展</code></pre><p>#JSP基本原理<br>    翻译阶段：在这一阶段，编写好的JSP（.jsp文件）文件首先会被Web容器中JSP引擎转换成Java源代码，也就是通过</p><p>Java Web开发环境：开发者工具包JDK，集成开发环境IDE（集编写、编译、部署和调试程序的“一条龙服务”），Java Web服务器（所谓的“容器”），web应用程序都需要部署到容器中运行</p>]]></content>
+    
+    <summary type="html">
+    
+      静态页面，动态页面，服务器。。。
+    
+    </summary>
+    
+      <category term="职场进阶" scheme="http://yoursite.com/categories/%E8%81%8C%E5%9C%BA%E8%BF%9B%E9%98%B6/"/>
+    
+    
+      <category term="CGI" scheme="http://yoursite.com/tags/CGI/"/>
+    
+      <category term="Servlet" scheme="http://yoursite.com/tags/Servlet/"/>
+    
+  </entry>
   
   <entry>
     <title>这病得治</title>
