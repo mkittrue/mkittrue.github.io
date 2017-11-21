@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="mkitture的博客">
 <meta property="og:description" content="静态页面，动态页面，服务器。。。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-20T13:24:44.407Z">
+<meta property="og:updated_time" content="2017-11-21T03:40:34.061Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java web整合开发一">
 <meta name="twitter:description" content="静态页面，动态页面，服务器。。。">
@@ -348,7 +348,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  521
+                  721
                 </span>
               
 
@@ -364,7 +364,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -424,9 +424,13 @@
                                                                                   数据库
 
                                           CGI的操作过程
-</code></pre><p>类比java程序，CGI程序的语言主要有两种Perl和shell脚本(java，c，c++均可)，CGI可以访问存储数据库中的数据或者其他系统中的文件，实现动态生成效果。<br>不足之处：<br>    每个请求均需要启动一个可执行的CGI程序，如果请求频繁。。。<br>    为了解决这个问题，改进的CGI诞生了，即所谓的Java Servert</p>
-<pre><code>Servert的模板：JSP（Java Server Pages）*******实现普通静态html和动态html混合编码，其是Servlet API的扩展
-</code></pre><p>#JSP基本原理<br>    翻译阶段：在这一阶段，编写好的JSP（.jsp文件）文件首先会被Web容器中JSP引擎转换成Java源代码，也就是通过</p>
+</code></pre><p>类比java程序，CGI程序的语言主要有两种Perl和shell脚本(java，c，c++均可)，CGI可以访问存储数据库中的数据或者其他系统中的文件，实现动态生成效果。<br>不足之处：<br>    每个请求均需要启动一个可执行的CGI程序，如果请求频繁。。。<br>    为了解决这个问题，改进的CGI诞生了，即所谓的Java Servert，本质上是程序（在Java中程序是以类为单位的，没毛病吧？，这其实也是servert比CGI的高明之处，CGI有点像面向过程，而Servlet面向对象，可供多个对象同时调用），用于处理来自浏览器的指令（网址），并向浏览器输出html代码，该程序提供了多种类及其方法却没有main方法，所以不能主动执行，由web服务器如（Tomcat）调用Servlet的中的方法来实现。</p>
+<p>&#160;&#160;&#160;&#160;Servert的模板：JSP（Java Server Pages）<strong><em>*</em></strong>实现普通静态html和动态html混合编码，其是Servlet API的扩展，把它当成servlet的一种</p>
+<h4 id="JSP基本原理"><a href="#JSP基本原理" class="headerlink" title="JSP基本原理"></a>JSP基本原理</h4><ol>
+<li>翻译：编写好的JSP（.jsp文件）文件首先会被Web容器中JSP（也是Servlet引擎）引擎转换成Java源代码。</li>
+<li>编译：Java代码通过Jvm(Java虚拟机)编程成可执行的字节码（二进制形式）</li>
+<li>请求：当Web服务器（“容器”）接受了客户端的请求后，执行上述的字节码，生成相应的页面反馈给浏览器显示</li>
+</ol>
 <p>Java Web开发环境：开发者工具包JDK，集成开发环境IDE（集编写、编译、部署和调试程序的“一条龙服务”），Java Web服务器（所谓的“容器”），web应用程序都需要部署到容器中运行</p>
 
       
@@ -661,7 +665,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#静态页面"><span class="nav-number">1.</span> <span class="nav-text">静态页面</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#静态页面"><span class="nav-number">1.</span> <span class="nav-text">静态页面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#JSP基本原理"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">JSP基本原理</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
