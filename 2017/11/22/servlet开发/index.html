@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="mkitture的博客">
 <meta property="og:description" content="Jsp是基于servlet的，servlet的开发流程如下：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-22T06:44:24.983Z">
+<meta property="og:updated_time" content="2017-11-22T06:47:58.927Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="servlet开发">
 <meta name="twitter:description" content="Jsp是基于servlet的，servlet的开发流程如下：">
@@ -389,7 +389,22 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><h1 id="Jsp是基于servlet的，servlet的开发流程如下："><a href="#Jsp是基于servlet的，servlet的开发流程如下：" class="headerlink" title="Jsp是基于servlet的，servlet的开发流程如下："></a>Jsp是基于servlet的，servlet的开发流程如下：</h1><ul>
+        <script src="/assets/js/APlayer.min.js"> </script><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
+		<script>
+			new APlayer({
+				element: document.getElementById("aplayer0"),
+				narrow: false,
+				autoplay: true,
+				showlrc: 0,
+				music: {
+					title: "最后的倾诉",
+					author: "韩磊",
+					url: "http://ozjh9fb7b.bkt.clouddn.com/%E9%9F%A9%E7%A3%8A%20-%20%E6%9C%80%E5%90%8E%E7%9A%84%E5%80%BE%E8%AF%89.mp3",
+					pic: "",
+				}
+			});
+		</script>
+<h1 id="Jsp是基于servlet的，servlet的开发流程如下："><a href="#Jsp是基于servlet的，servlet的开发流程如下：" class="headerlink" title="Jsp是基于servlet的，servlet的开发流程如下："></a>Jsp是基于servlet的，servlet的开发流程如下：</h1><ul>
 <li>在tomacat的文件夹（\webapps）下新建WEB-INF的文件夹</li>
 <li>开发servlet（编写程序，引入servlet-api.jar）</li>
 <li>部署你的servlet（就是在tomcat那里登记自己开发的servlet的名称位置等信息，通过在WEB-INF文件夹下新建web.xml文件）</li>
