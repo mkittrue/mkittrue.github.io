@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="html," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="mkitture的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="html作为一种超文本标记语言">
+<meta name="keywords" content="html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html知识概要">
+<meta property="og:url" content="http://yoursite.com/2017/11/27/html/index.html">
+<meta property="og:site_name" content="mkitture的博客">
+<meta property="og:description" content="html作为一种超文本标记语言">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-27T07:48:21.706Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="html知识概要">
+<meta name="twitter:description" content="html作为一种超文本标记语言">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/11/27/html/"/>
+
+
+
+
+
+  <title>html知识概要 | mkitture的博客</title>
+  
+
+
+
+
+
+
+
+
+ 
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+	<a href="https://github.com/mkittrue"><img style="position: absolute; top: 0; right: 0; border: 0
+	;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a
+	2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f67
+	7261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.co
+	m/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+	
+	
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">mkitture的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">种一棵树最好的时候是十年前，其次是现在！</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/27/html/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="mkitture">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ozjh9fb7b.bkt.clouddn.com/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mkitture的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">html知识概要</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-27T08:53:24+08:00">
+                2017-11-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/职场进阶/" itemprop="url" rel="index">
+                    <span itemprop="name">职场进阶</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3,454
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  16
+                </span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  html作为一种超文本标记语言
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><div id="aplayer3" class="aplayer" style="margin-bottom: 20px;"></div>
+		<script>
+			new APlayer({
+				element: document.getElementById("aplayer3"),
+				narrow: false,
+				autoplay: true,
+				showlrc: 0,
+				music: {
+					title: "陈明",
+					author: "我要找到你",
+					url: "http://ozjh9fb7b.bkt.clouddn.com/%E9%99%88%E6%98%8E%20-%20%E6%88%91%E8%A6%81%E6%89%BE%E5%88%B0%E4%BD%A0.mp3",
+					pic: "",
+				}
+			});
+		</script>
+<h1 id="html标签"><a href="#html标签" class="headerlink" title="html标签"></a>html标签</h1><p>html标记标签通常称为html标签（html tag）<br>html标签由尖括号包围，通常成对出现的，比如:&lt;b&gt;…&lt;/b&gt;</p>
+<h1 id="html文档-网页"><a href="#html文档-网页" class="headerlink" title="html文档=网页"></a>html文档=网页</h1><h1 id="html编辑器"><a href="#html编辑器" class="headerlink" title="html编辑器"></a>html编辑器</h1><p> &nbsp;&nbsp;notepad 或 textedit或 Adobe Dreamweaver</p>
+<h1 id="html头部"><a href="#html头部" class="headerlink" title="html头部"></a>html头部</h1><p>文档的标题：&lt;title&gt;定义文档的标题<br>所有链接一个目标</p>
+<pre><code>&lt;head&gt;
+    &lt;base href=&quot;http://www.baidu.com&quot;&gt;
+    &lt;base target=&quot;_blank&quot;&gt;
+&lt;/head&gt;
+</code></pre><p>文档描述：&lt;meta&gt;描述文档,提供关于html文档的元数据，规定页面的描述，关键词，文档的作者，最后的修改时间以及其他元数据等<br>&lt;meta name=”description” content=”Free Web tutorials on HTML, CSS, XML”&gt;<br>重定向用户：如何把用户定向添加到新的网址</p>
+<h1 id="html基础"><a href="#html基础" class="headerlink" title="html基础"></a>html基础</h1><h2 id="注释-lt-–注释内容–-gt"><a href="#注释-lt-–注释内容–-gt" class="headerlink" title="注释&lt;!–注释内容–&gt;"></a>注释&lt;!–注释内容–&gt;</h2><h2 id="html标题-lt-h1-gt-…-lt-h1-gt"><a href="#html标题-lt-h1-gt-…-lt-h1-gt" class="headerlink" title="html标题  &lt;h1&gt;…&lt;h1&gt;"></a>html标题  &lt;h1&gt;…&lt;h1&gt;</h2><h2 id="html段落-lt-p-gt-…-lt-p-gt-（可以用-lt-br-gt-强制换行）"><a href="#html段落-lt-p-gt-…-lt-p-gt-（可以用-lt-br-gt-强制换行）" class="headerlink" title="html段落  &lt;p&gt;…&lt;/p&gt;（可以用&lt;br/&gt;强制换行）"></a>html段落  &lt;p&gt;…&lt;/p&gt;（可以用&lt;br/&gt;强制换行）</h2><h2 id="html标签-lt-a-href-”www-baidu-com”-gt-这是百度-lt-a-gt"><a href="#html标签-lt-a-href-”www-baidu-com”-gt-这是百度-lt-a-gt" class="headerlink" title="html标签  &lt;a href=”www.baidu.com”&gt;这是百度&lt;/a&gt;"></a>html标签  &lt;a href=”www.baidu.com”&gt;这是百度&lt;/a&gt;</h2><h2 id="下划线-lt-hr-gt"><a href="#下划线-lt-hr-gt" class="headerlink" title="下划线  &lt;hr/&gt;"></a>下划线  &lt;hr/&gt;</h2><h2 id="html图像-lt-img-src-”图片-jpg”-width-”100”-height-”50”-alt-”Big-Boat-鼠标移至该图片时出现的提示信息-”-gt"><a href="#html图像-lt-img-src-”图片-jpg”-width-”100”-height-”50”-alt-”Big-Boat-鼠标移至该图片时出现的提示信息-”-gt" class="headerlink" title="html图像  &lt;img src=”图片.jpg” width=”100” height=”50” alt=”Big Boat(鼠标移至该图片时出现的提示信息)”&gt;"></a>html图像  &lt;img src=”图片.jpg” width=”100” height=”50” alt=”Big Boat(鼠标移至该图片时出现的提示信息)”&gt;</h2><h3 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h3><pre><code>&lt;html&gt;
+&lt;body background=&quot;/i/eg_background.jpg&quot;&gt;
+&lt;h3&gt;图像背景&lt;/h3&gt;
+&lt;p&gt;gif 和 jpg 文件均可用作 HTML 背景。&lt;/p&gt;
+&lt;p&gt;如果图像小于页面，图像会进行重复。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="空格-lt-br-gt"><a href="#空格-lt-br-gt" class="headerlink" title="空格   &lt;br/&gt;"></a>空格   &lt;br/&gt;</h2><h1 id="html元素（元素与标签的区别）"><a href="#html元素（元素与标签的区别）" class="headerlink" title="html元素（元素与标签的区别）"></a>html元素（元素与标签的区别）</h1><p>指开始标签和结束标签之间的所有代码</p>
+<h1 id="html属性-可参考html属性手册"><a href="#html属性-可参考html属性手册" class="headerlink" title="html属性(可参考html属性手册)"></a>html属性(可参考html属性手册)</h1><p>标签拥有属性，属性总是以名称/值的形式出现，例如：<br>&lt;a href=”www.baidu.com” target=”_blank”&gt;百度&lt;/a&gt;    target指向blank表示指向的链接在新页面打开</p>
+<h1 id="html链接"><a href="#html链接" class="headerlink" title="html链接"></a>html链接</h1><p>命名锚：在html文档中对锚进行定义，创建锚 &lt;a name=”tips”（锚的地址）&gt;基本的注意事项(锚的名称)&lt;/a&gt;<br>指向锚: 然后在该文档中创建指向该锚的链接 &lt;a href=”#tips”&gt;有用的提示&lt;/a&gt;<br>属性：名称=值  &lt;h2 style=”background-color: green”&gt;This is a paragraph&lt;/h2&gt;</p>
+<h1 id="html格式化"><a href="#html格式化" class="headerlink" title="html格式化"></a>html格式化</h1><p>所谓的格式化，（赋予文本一定的格式）可定义很多供格式化输出的元素，比如粗体和斜体字</p>
+<p>文本格式化标签</p>
+<pre><code>&lt;b&gt;                定义粗体文字
+&lt;big&gt;            定于大号字
+&lt;em&gt;            定义着重文字
+&lt;i&gt;                定义斜体字
+&lt;small&gt;&lt;/small&gt; 定义小号字
+&lt;strong&gt;        定义加重语气
+&lt;sub&gt;            定义下表字
+&lt;sup&gt;            定义上标字
+&lt;ins&gt;            定义插入字
+&lt;del&gt;            定义删除字（字被杠掉）
+</code></pre><p>计算机输出标签</p>
+<pre><code>&lt;code&gt;            定义计算机代码
+&lt;kbd&gt;            定义键盘码
+&lt;samp&gt;            定义计算机代码样本
+&lt;tt&gt;            定义打字机代码
+&lt;var&gt;            定义变量
+&lt;pre&gt;            定义预格式文本
+</code></pre><p>引用、引用和术语定义</p>
+<pre><code>&lt;abbr&gt;            定义缩写:&lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt;&gt; 鼠标移至WHO时，会出现全称提示
+&lt;acronym&gt;        定义首字母缩写
+&lt;address&gt;        定义地址
+&lt;bdo&gt;            定义文字方向
+&lt;blockquote&gt;    定义长的引用
+&lt;q&gt;                定义短的引用语
+&lt;cite&gt;            定义引用、印证
+&lt;dfn&gt;            定义一个定义项目
+</code></pre><h1 id="html-css"><a href="#html-css" class="headerlink" title="html css"></a>html css</h1><p>通过使用HTML4.0,所有的格式化代码均可移出html文档，然后移入一个独立的样式表，格式化怎么理解？</p>
+<h2 id="html中的样式"><a href="#html中的样式" class="headerlink" title="html中的样式"></a>html中的样式</h2><p>当单个文件需要特别样式时，就可以使用内部样式表</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+    h1{color:red}
+    p{color:blue}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;header 1&lt;/h1&gt;
+    &lt;p&gt;a paragraph&lt;/p&gt;&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="没有下划线的链接（内联样式，当特殊的样式需要应用到个别元素时，就可以使用内联样式，样式属性可以包含任何CSS属性）"><a href="#没有下划线的链接（内联样式，当特殊的样式需要应用到个别元素时，就可以使用内联样式，样式属性可以包含任何CSS属性）" class="headerlink" title="没有下划线的链接（内联样式，当特殊的样式需要应用到个别元素时，就可以使用内联样式，样式属性可以包含任何CSS属性）"></a>没有下划线的链接（内联样式，当特殊的样式需要应用到个别元素时，就可以使用内联样式，样式属性可以包含任何CSS属性）</h2><pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=gb2312&quot; /&gt;
+&lt;meta http-equiv=&quot;Content-Language&quot; content=&quot;zh-cn&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;a href=&quot;/example/html/lastpage.html&quot; style=&quot;text-decoration:none&quot;&gt;
+这是一个链接！
+&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="链接到一个外部样式表（使用标签链接到一个外部样式表）"><a href="#链接到一个外部样式表（使用标签链接到一个外部样式表）" class="headerlink" title="链接到一个外部样式表（使用标签链接到一个外部样式表）"></a>链接到一个外部样式表（使用<link>标签链接到一个外部样式表）</h2><p>当样式需要被应用到很多页面时，外部样式表将是理想的选择。使用外部样式表，便于通过更改一个整个站点的外观</p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/html/csstest1.css&quot; &gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;我通过外部样式表进行格式化。&lt;/h1&gt;
+&lt;p&gt;我也一样！&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="样式属性参考表"><a href="#样式属性参考表" class="headerlink" title="样式属性参考表"></a>样式属性参考表</h2><pre><code>&lt;style&gt;         定义样式定义
+&lt;link&gt;            定义资源引用
+&lt;div&gt;            定义文档中的节或区域（块级）
+&lt;span&gt;            定义文档中的行内的小块或区域
+</code></pre><h1 id="html表格"><a href="#html表格" class="headerlink" title="html表格"></a>html表格</h1><pre><code>&lt;table border=&quot;1&quot; bgcolor=&quot;red&quot; background=&quot;/图片.jpg&quot;&gt;
+&lt;tr&gt;
+&lt;th&gt;表头&lt;/th&gt;
+&lt;th&gt;表头&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;red&quot;&gt;row 1, cell 1&lt;/td&gt;
+&lt;td&gt;row 1, cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td background=&quot;/图片.jpg&quot;&gt;row 2, cell 1&lt;/td&gt;
+&lt;td&gt;row 2, cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><p>浏览器显示：<br>    row 1, cell 1     row 1, cell 2<br>    row 2, cell 1     row 2, cell 2</p>
+<h2 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h2><pre><code>&lt;table&gt;            定义表格
+&lt;caption&gt;        定义表格标题
+&lt;th&gt;            定义表格的表头
+&lt;tr&gt;            定义表格的行
+&lt;td&gt;            定义表格单元
+&lt;thead&gt;            定义表格的页眉
+&lt;tbody&gt;            定义表格的主体
+&lt;tfoot&gt;            定义表格的页脚
+&lt;col&gt;            定义表格列的属性
+&lt;colgroup&gt;        定义表格列的组
+</code></pre><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>无序列表</p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;milk&lt;/li&gt;&gt;
+&lt;/ul&gt;
+</code></pre><p>有序列表</p>
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;milk&lt;/li&gt;&gt;
+&lt;/ol&gt;
+</code></pre><h1 id="html块"><a href="#html块" class="headerlink" title="html块"></a>html块</h1><p>可以通过&lt;div&gt;和&lt;span&gt;将html元素组合起来<br>html&lt;div&gt;元素是快加元素，它是可用于组合其他html元素的容器<br>&lt;div&gt;元素没有特定的含义，除此之外，由于它属于块级元素，浏览器会在其后显示折行<br>如果与css一同使用，&lt;div&gt;元素可用于对大的内容块设置样式属性<br>&lt;div&gt;元素的另一个常见的用途是文档布局，它取代了使用表格定义布局的老式方法，使用&lt;table&gt;元素进行文档布局不是表格的正确用法，<table>元素的作用是显示表格化的数据</table></p>
+<p>html&lt;span&gt;元素是内联元素，可用作文本的容器<br>&lt;span&gt;元素也没有特定的含义<br>当与CSS一同使用时，&lt;span&gt;元素可用于为部分文本设置样式属性。</p>
+<h1 id="html类"><a href="#html类" class="headerlink" title="html类"></a>html类</h1><p>对html进行分类（设置类），使我们能够为元素类定义CSS样式，为相同的类设置相同的样式，或者为不同的类设置不同的样式<br>&lt;div&gt;示例</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.cities {
+    background-color:black;
+    color:white;
+    margin:20px;
+    padding:20px;
+}
+.cities_2{
+    background-color:red;
+    color:white;
+    margin:20px;
+    padding:20px;
+}        
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;!--分块，从head区中引用相应的style--&gt;
+&lt;div class=&quot;cities&quot;&gt;
+&lt;h2&gt;London&lt;/h2&gt;
+
+&lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;
+
+&lt;p&gt;Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.&lt;/p&gt;
+&lt;/div&gt; 
+
+&lt;div class=&quot;cities_2&quot;&gt;
+&lt;h2&gt;Paris&lt;/h2&gt;
+
+&lt;p&gt;Paris is the capital and most populous city of France.&lt;/p&gt;
+
+&lt;p&gt;Situated on the Seine River, it is at the heart of the 蝜e-de-France region, also known as the r間ion parisienne.&lt;/p&gt;
+
+&lt;p&gt;Within its metropolitan area is one of the largest population centers in Europe, with over 12 million inhabitants.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cities&quot;&gt;
+&lt;h2&gt;Tokyo&lt;/h2&gt;
+
+&lt;p&gt;Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.&lt;/p&gt;
+
+&lt;p&gt;It is the seat of the Japanese government and the Imperial Palace, and the home of the Japanese Imperial Family.&lt;/p&gt;
+
+&lt;p&gt;The Tokyo prefecture is part of the world&apos;s most populous metropolitan area with 38 million people and the world&apos;s largest urban economy.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>&lt;span&gt;示例；内联样式</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  span.red {color:red;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;My &lt;span class=&quot;red&quot;&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h1 id="html布局（网站的结构布局）"><a href="#html布局（网站的结构布局）" class="headerlink" title="html布局（网站的结构布局）"></a>html布局（网站的结构布局）</h1><p>使用&lt;div&gt;元素的html布局：&lt;div&gt;元素常用作布局工具，因为能够轻松通过CSS对其进行定位<br>这个例子使用了四个&lt;div&gt;元素来创建的多列布局</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;!--style内部的CSS样式--&gt;
+&lt;style&gt;
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;          
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;          
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;          
+}
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div id=&quot;header&quot;&gt;
+&lt;h1&gt;City Gallery&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;nav&quot;&gt;
+London&lt;br&gt;
+Paris&lt;br&gt;
+Tokyo&lt;br&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;section&quot;&gt;
+&lt;h2&gt;London&lt;/h2&gt;
+&lt;p&gt;
+London is the capital city of England. It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.
+&lt;/p&gt;
+&lt;p&gt;
+Standing on the River Thames, London has been a major settlement for two millennia,
+its history going back to its founding by the Romans, who named it Londinium.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;footer&quot;&gt;
+Copyright ? W3Schools.com
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="html5语义元素"><a href="#html5语义元素" class="headerlink" title="html5语义元素"></a>html5语义元素</h2><pre><code>header             定义文档或节的页眉
+nav             定义导航链接的容器
+section         定义文档中的节
+article         定义独立的自包含文章
+aside             定义内容之外的内容（比如侧栏）
+footer             定义文档或节的页脚
+details         定义额外的细节
+summary          定义details元素的标题
+</code></pre><h1 id="html响应式Web容器"><a href="#html响应式Web容器" class="headerlink" title="html响应式Web容器"></a>html响应式Web容器</h1><ul>
+<li>RWD指的是响应式Web涉及（Responsive Web Design）</li>
+<li>RWD能够以可变尺寸传递网页</li>
+<li>RWD对于平板和移动设备是必需的<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en-US"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">.city &#123;</span><br><span class="line">float: left;</span><br><span class="line">margin: <span class="number">5</span>px;</span><br><span class="line">padding: <span class="number">15</span>px;</span><br><span class="line">width: <span class="number">300</span>px;</span><br><span class="line">height: <span class="number">300</span>px;</span><br><span class="line">border: <span class="number">1</span>px solid black;</span><br><span class="line">&#125; </span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;W3School Demo&lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">&lt;h2&gt;Resize this responsive page!&lt;/</span>h2&gt;</span><br><span class="line">&lt;br&gt;</span><br><span class="line"></span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"city"</span>&gt;</span><br><span class="line">&lt;h2&gt;London&lt;<span class="regexp">/h2&gt;</span></span><br><span class="line"><span class="regexp">&lt;p&gt;London is the capital city of England.&lt;/</span>p&gt;</span><br><span class="line">&lt;p&gt;It is the most populous city <span class="keyword">in</span> the United Kingdom,</span><br><span class="line"><span class="keyword">with</span> a metropolitan area <span class="keyword">of</span> over <span class="number">13</span> million inhabitants.&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"city"</span>&gt;</span><br><span class="line">&lt;h2&gt;Paris&lt;<span class="regexp">/h2&gt;</span></span><br><span class="line"><span class="regexp">&lt;p&gt;Paris is the capital and most populous city of France.&lt;/</span>p&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;div class="city"&gt;</span></span><br><span class="line"><span class="regexp">&lt;h2&gt;Tokyo&lt;/</span>h2&gt;</span><br><span class="line">&lt;p&gt;Tokyo is the capital <span class="keyword">of</span> Japan, the center <span class="keyword">of</span> the Greater Tokyo Area,</span><br><span class="line">and the most populous metropolitan area <span class="keyword">in</span> the world.&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line"></span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="html框架"><a href="#html框架" class="headerlink" title="html框架"></a>html框架<frame></h1><p>通过使用框架，你可以在同一个浏览器窗口中显示不止一个页面<br>框架标签<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;frameset cols=<span class="string">"25%,75%"</span>&gt;</span><br><span class="line">	&lt;frame src=<span class="string">"frame_a.html"</span>&gt;</span><br><span class="line">	&lt;frame src=<span class="string">"frame_b.html"</span>&gt;</span><br><span class="line">&lt;<span class="regexp">/frameset&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="html内联框架（用于在网页内显示网页）"><a href="#html内联框架（用于在网页内显示网页）" class="headerlink" title="html内联框架（用于在网页内显示网页）"></a>html内联框架（用于在网页内显示网页）</h1><pre><code>&lt;iframe src=&quot;URL&quot; frameborder=&quot;0&quot; width=&quot;200&quot; height=&quot;100&quot;&gt;...&lt;/frame&gt;
+</code></pre><p>URL指向隔离页面的位置</p>
+<h1 id="html背景"><a href="#html背景" class="headerlink" title="html背景"></a>html背景</h1><p>作为body的属性，&lt;body bgcolor=”red”&gt;&lt;/body&gt;</p>
+<h1 id="html脚本"><a href="#html脚本" class="headerlink" title="html脚本"></a>html脚本</h1><pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;!--
+document.write(&quot;Hello World!&quot;)
+//--&gt;
+&lt;/script&gt;
+</code></pre><h1 id="html字符实体"><a href="#html字符实体" class="headerlink" title="html字符实体"></a>html字符实体</h1><pre><code>html中的预留字符必须被替换为字符实体，空格，大于，小于号等
+</code></pre><h1 id="html-web服务器"><a href="#html-web服务器" class="headerlink" title="html web服务器"></a>html web服务器</h1><h1 id="html-表单"><a href="#html-表单" class="headerlink" title="html 表单"></a>html 表单</h1><p>html表单用于搜集不同类型的用户输入<br>用&lt;form&gt;元素定义html表单</p>
+<pre><code>&lt;form&gt;
+    form elements
+&lt;form&gt;
+</code></pre><p>html表单包含表单元素<br>表单元素指不同类型的input元素、复选框、单选按钮和提交按钮等</p>
+<p>##&lt;input&gt;元素<br>属性类型<br>    text             定义常规文本输入<br>    radio            定义单选按钮输入（选择多个选择之一）<br>    submit            定义提交按钮（提交表单）</p>
+<p>&lt;input type=”text”&gt;定义用于文本输入的单行输入字段<br>文本输入框实例<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;form&gt;</span><br><span class="line">	First name:<span class="xml"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span></span><br><span class="line"><span class="xml">	<span class="comment">&lt;!--插入文本框--&gt;</span></span></span><br><span class="line">	&lt;input type="text" name="firstname"&gt;</span><br><span class="line">	&lt;br&gt;</span><br><span class="line">	Last name:&lt;br&gt;</span><br><span class="line">	&lt;input type="text" name="lastname"&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure></p>
+<p>&lt;input type=”radio”&gt;定义单选按钮<br>单选按钮实例<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;form&gt;</span><br><span class="line">	&lt;input type=<span class="string">"radio"</span> name=<span class="string">"sex"</span> value=<span class="string">"male"</span> checked&gt;Male</span><br><span class="line">	&lt;br&gt;</span><br><span class="line">	&lt;input type=<span class="string">"radio"</span> name=<span class="string">"sex"</span> value=<span class="string">"female"</span>&gt;Female</span><br><span class="line">&lt;<span class="regexp">/form&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>&lt;input type=”submit”&gt;定义用于向表单处理程序<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--表单结果提交到的位置,method指表单的提交方式，适用于少量提交，并且信息会出现在浏览器中--&gt;</span><br><span class="line">&lt;form action=<span class="string">"action_page.php"</span> method=<span class="string">"GET"</span>&gt;</span><br><span class="line">	First name:<span class="xml"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span></span><br><span class="line">	&lt;input type="text" name="firstname" value="Mickey"&gt;</span><br><span class="line">	&lt;br&gt;</span><br><span class="line">	Last name:&lt;br&gt;</span><br><span class="line">	&lt;input type="text" name="lastname" value="Mouse"&gt;</span><br><span class="line">	&lt;br&gt;&lt;br&gt;</span><br><span class="line">	&lt;input type="submit" value="Submit"&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure></p>
+<p>用&lt;fieldset&gt;组合表单数据<br>&lt;legend&gt;元素为&lt;fieldset&gt;元素定义标题，把下面的几个文本框联系到一起，框成一个整体<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=<span class="string">"action_page.php"</span>&gt;</span><br><span class="line">	&lt;fieldset&gt;</span><br><span class="line">		&lt;legend&gt;Personal information&lt;<span class="regexp">/legend&gt;</span></span><br><span class="line"><span class="regexp">		First name:&lt;br&gt;</span></span><br><span class="line"><span class="regexp">		&lt;input type="text" name="firstname" value="mickey"&gt;</span></span><br><span class="line"><span class="regexp">		&lt;br&gt;</span></span><br><span class="line"><span class="regexp">		Last name:&lt;br&gt;</span></span><br><span class="line"><span class="regexp">		&lt;input type="text" name="lastname" value="Mouse"&gt;</span></span><br><span class="line"><span class="regexp">		&lt;br&gt;&lt;br&gt;</span></span><br><span class="line"><span class="regexp">		&lt;input type="submit" value="submit"&gt;</span></span><br><span class="line"><span class="regexp">	&lt;/</span>fieldset&gt;</span><br><span class="line">&lt;<span class="regexp">/form&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="html-form属性"><a href="#html-form属性" class="headerlink" title="html form属性"></a>html form属性</h2><pre><code>&lt;form action=&quot;action_page.php&quot; method=&quot;GET&quot; target=&quot;_blank&quot; accept-charset=&quot;
+UTF-8&quot; enctype=&quot;application/x-www-form-urlencoded&quot; autocomplete=&quot;off&quot; novalidate&gt;
+form elements
+&lt;/form&gt;
+</code></pre><p>&lt;form&gt;属性列表<br>    accept-charset                规定在被提交表单中使用的字符集（默认：页面字符集）<br>    action                         规定向何处提交表单的地址（url）提交页面<br>    autocomplete                 规定浏览器应该自动完成表单（默认开启）<br>    enctype                     规定被提交数据的编码(默认：url-encoded)<br>    method                         规定在提交表单时所用的http方法（默认：GET）<br>    name                         规定识别表单的名称(对于DOM使用：document.forms.name)<br>    novalidate                     规定浏览器不验证表单<br>    target                         规定action属性中地址的目标（默认：_self）</p>
+<h2 id="lt-select-gt-元素（下拉列表）"><a href="#lt-select-gt-元素（下拉列表）" class="headerlink" title="&lt;select&gt;元素（下拉列表）"></a>&lt;select&gt;元素（下拉列表）</h2><p>实例<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;select name=<span class="string">"cars"</span>&gt;</span><br><span class="line">	&lt;option value=<span class="string">"volo"</span>&gt;Volo&lt;<span class="regexp">/option&gt;</span></span><br><span class="line"><span class="regexp">	&lt;option value="saab"&gt;Saab&lt;/</span>option&gt;</span><br><span class="line">	&lt;option value=<span class="string">"fiat"</span>&gt;Fiat&lt;<span class="regexp">/option&gt;</span></span><br><span class="line"><span class="regexp">	&lt;option value="audi"&gt;Audi&lt;/</span>option&gt;</span><br><span class="line">&lt;<span class="regexp">/select&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="textarea元素定义多行输入字段（文本域）"><a href="#textarea元素定义多行输入字段（文本域）" class="headerlink" title="textarea元素定义多行输入字段（文本域）"></a>textarea元素定义多行输入字段（文本域）</h2><p>实例<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea name=<span class="string">"message"</span> rows=<span class="string">"10"</span> cols=<span class="string">"30"</span>&gt;</span><br><span class="line">	The cat was playing <span class="keyword">in</span> the garden.</span><br><span class="line">&lt;<span class="regexp">/textarea&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="button元素定义可点击的按钮，上面的submit也会自动生成一个按钮，这个按钮的功能单一，只是用于向服务器提交表单"><a href="#button元素定义可点击的按钮，上面的submit也会自动生成一个按钮，这个按钮的功能单一，只是用于向服务器提交表单" class="headerlink" title="button元素定义可点击的按钮，上面的submit也会自动生成一个按钮，这个按钮的功能单一，只是用于向服务器提交表单"></a>button元素定义可点击的按钮，上面的submit也会自动生成一个按钮，这个按钮的功能单一，只是用于向服务器提交表单</h2><p>实例<br>    &lt;button type=”button” onclick=”alert(‘hello world’)”&gt;click me&lt;/button&gt;</p>
+<h2 id="html5新增表单元素"><a href="#html5新增表单元素" class="headerlink" title="html5新增表单元素"></a>html5新增表单元素</h2><ul>
+<li>&lt;datalist&gt;&lt;/datalist&gt;元素为&lt;input&gt;元素规定预定义选项列表，用户会在他们输入数据时看到预定义选项的下拉列表</li>
+<li>&lt;keygen&gt;&lt;/keygen&gt;</li>
+<li>&lt;output&gt;&lt;/output&gt;<br>实例<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=<span class="string">"action_page.php"</span>&gt;</span><br><span class="line">	&lt;input list=<span class="string">"browsers"</span>&gt;</span><br><span class="line">	&lt;datalist id=<span class="string">"browsers"</span>&gt;</span><br><span class="line">		&lt;option value=<span class="string">"Internet Explorer"</span>&gt;</span><br><span class="line">		&lt;option value=<span class="string">"Firefox"</span>&gt;</span><br><span class="line">		&lt;option value=<span class="string">"chrome"</span>&gt;</span><br><span class="line">		&lt;option value=<span class="string">"opera"</span>&gt;</span><br><span class="line">		&lt;option value=<span class="string">"safari"</span>&gt;</span><br><span class="line">	&lt;<span class="regexp">/datalist&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>form&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="html输入类型-本章描述-lt-input元素的输入类型-gt"><a href="#html输入类型-本章描述-lt-input元素的输入类型-gt" class="headerlink" title="html输入类型,本章描述&lt;input元素的输入类型&gt;"></a>html输入类型,本章描述&lt;input元素的输入类型&gt;</h1><ul>
+<li>input type：text</li>
+<li>input type: password</li>
+<li>input type：submit</li>
+<li>input type: radio</li>
+<li>input type: checkbox复选框</li>
+<li>input type: button</li>
+</ul>
+<h1 id="html输入属性"><a href="#html输入属性" class="headerlink" title="html输入属性"></a>html输入属性</h1><ul>
+<li>value表示输入框中初始值，用于提示，用户可以手动删除，自行添加自己所需的值</li>
+<li>readonly属性规定输入字段为只读（不能修改）,不需要属性值，等同于readonly=”readonly”<br>  例如：&lt;input type=”text” name=”firstname” value=”John” readonly&gt;</li>
+<li>disabled属性规定输入字段是禁用的，被禁用的元素是不可用和不可点击的，被禁用的元素不会被提交<br>  例如：&lt;input type=”text” name=”firstname” value=”John” disabled&gt;</li>
+<li>size属性规定输入字段的尺寸（以字符计）<br>  例如：&lt;input type=”text” name=”firstname” value=”John” size=”40”&gt;</li>
+<li>maxlength属性规定输入字段允许的最大长度<br>  例如：&lt;input type=”text” name=”firstname” maxlength=”10”&gt;</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+	
+	  <div>
+	
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+
+
+	
+	  </div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html/" rel="tag"><i class="fa fa-tag"></i> html</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/26/mysql连接/" rel="next" title="jdbc方式连接sql">
+                <i class="fa fa-chevron-left"></i> jdbc方式连接sql
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+<div class="post-spread">
+      
+        ﻿
+    <!--MOB SHARE BEGIN-->
+				<div class="-mob-share-ui-button -mob-share-open">分享</div>
+                                <div class="-mob-share-ui" style="display: none">
+                                    <ul class="-mob-share-list">
+                                        <li class="-mob-share-weibo"><p>新浪微博</p></li>
+                                        <li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+                                        <li class="-mob-share-qzone"><p>QQ空间</p></li>
+                                        <li class="-mob-share-qq"><p>QQ好友</p></li>
+                                        <li class="-mob-share-weixin"><p>微信</p></li>
+                                        <li class="-mob-share-douban"><p>豆瓣</p></li>
+                                        <li class="-mob-share-renren"><p>人人网</p></li>
+                                        <li class="-mob-share-kaixin"><p>开心网</p></li>
+                                        <li class="-mob-share-facebook"><p>Facebook</p></li>
+                                        <li class="-mob-share-twitter"><p>Twitter</p></li>
+                                        <li class="-mob-share-pocket"><p>Pocket</p></li>
+                                        <li class="-mob-share-google"><p>Google+</p></li>
+                                        <li class="-mob-share-youdao"><p>有道云笔记</p></li>
+                                        <li class="-mob-share-mingdao"><p>明道</p></li>
+                                        <li class="-mob-share-pengyou"><p>朋友网</p></li>
+                                        <li class="-mob-share-tumblr"><p>Tumblr</p></li>
+                                        <li class="-mob-share-instapaper"><p>Instapaper</p></li>
+                                        <li class="-mob-share-linkedin"><p>LinkedIn</p></li>
+                                    </ul>
+                                    <div class="-mob-share-close">取消</div>
+                                </div>
+                                <div class="-mob-share-ui-bg"></div>
+                                <script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=227464a4276e2"></script>
+                                <!--MOB SHARE END-->
+
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="uyan_frame"></div>
+    </div>
+
+  
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="http://ozjh9fb7b.bkt.clouddn.com/touxiang.jpg"
+                alt="mkitture" />
+            
+              <p class="site-author-name" itemprop="name">mkitture</p>
+              <p class="site-description motion-element" itemprop="description">Java   Web前端开发    大数据开发   人工智能</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#html标签"><span class="nav-number">1.</span> <span class="nav-text">html标签</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html文档-网页"><span class="nav-number">2.</span> <span class="nav-text">html文档=网页</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html编辑器"><span class="nav-number">3.</span> <span class="nav-text">html编辑器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html头部"><span class="nav-number">4.</span> <span class="nav-text">html头部</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html基础"><span class="nav-number">5.</span> <span class="nav-text">html基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注释-lt-–注释内容–-gt"><span class="nav-number">5.1.</span> <span class="nav-text">注释<!–注释内容–></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html标题-lt-h1-gt-…-lt-h1-gt"><span class="nav-number">5.2.</span> <span class="nav-text">html标题  <h1>…<h1></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html段落-lt-p-gt-…-lt-p-gt-（可以用-lt-br-gt-强制换行）"><span class="nav-number">5.3.</span> <span class="nav-text">html段落  <p>…</p>（可以用<br/>强制换行）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html标签-lt-a-href-”www-baidu-com”-gt-这是百度-lt-a-gt"><span class="nav-number">5.4.</span> <span class="nav-text">html标签  <a href=”www.baidu.com”>这是百度</a></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下划线-lt-hr-gt"><span class="nav-number">5.5.</span> <span class="nav-text">下划线  <hr/></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html图像-lt-img-src-”图片-jpg”-width-”100”-height-”50”-alt-”Big-Boat-鼠标移至该图片时出现的提示信息-”-gt"><span class="nav-number">5.6.</span> <span class="nav-text">html图像  <img src=”图片.jpg” width=”100” height=”50” alt=”Big Boat(鼠标移至该图片时出现的提示信息)”></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景图片"><span class="nav-number">5.6.1.</span> <span class="nav-text">背景图片</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#空格-lt-br-gt"><span class="nav-number">5.7.</span> <span class="nav-text">空格   <br/></span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html元素（元素与标签的区别）"><span class="nav-number">6.</span> <span class="nav-text">html元素（元素与标签的区别）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html属性-可参考html属性手册"><span class="nav-number">7.</span> <span class="nav-text">html属性(可参考html属性手册)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html链接"><span class="nav-number">8.</span> <span class="nav-text">html链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html格式化"><span class="nav-number">9.</span> <span class="nav-text">html格式化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html-css"><span class="nav-number">10.</span> <span class="nav-text">html css</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#html中的样式"><span class="nav-number">10.1.</span> <span class="nav-text">html中的样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#没有下划线的链接（内联样式，当特殊的样式需要应用到个别元素时，就可以使用内联样式，样式属性可以包含任何CSS属性）"><span class="nav-number">10.2.</span> <span class="nav-text">没有下划线的链接（内联样式，当特殊的样式需要应用到个别元素时，就可以使用内联样式，样式属性可以包含任何CSS属性）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接到一个外部样式表（使用标签链接到一个外部样式表）"><span class="nav-number">10.3.</span> <span class="nav-text">链接到一个外部样式表（使用标签链接到一个外部样式表）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样式属性参考表"><span class="nav-number">10.4.</span> <span class="nav-text">样式属性参考表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html表格"><span class="nav-number">11.</span> <span class="nav-text">html表格</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#表格标签"><span class="nav-number">11.1.</span> <span class="nav-text">表格标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列表"><span class="nav-number">12.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html块"><span class="nav-number">13.</span> <span class="nav-text">html块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html类"><span class="nav-number">14.</span> <span class="nav-text">html类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html布局（网站的结构布局）"><span class="nav-number">15.</span> <span class="nav-text">html布局（网站的结构布局）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#html5语义元素"><span class="nav-number">15.1.</span> <span class="nav-text">html5语义元素</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html响应式Web容器"><span class="nav-number">16.</span> <span class="nav-text">html响应式Web容器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html框架"><span class="nav-number">17.</span> <span class="nav-text">html框架</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html内联框架（用于在网页内显示网页）"><span class="nav-number">18.</span> <span class="nav-text">html内联框架（用于在网页内显示网页）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html背景"><span class="nav-number">19.</span> <span class="nav-text">html背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html脚本"><span class="nav-number">20.</span> <span class="nav-text">html脚本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html字符实体"><span class="nav-number">21.</span> <span class="nav-text">html字符实体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html-web服务器"><span class="nav-number">22.</span> <span class="nav-text">html web服务器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html-表单"><span class="nav-number">23.</span> <span class="nav-text">html 表单</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#html-form属性"><span class="nav-number">23.1.</span> <span class="nav-text">html form属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lt-select-gt-元素（下拉列表）"><span class="nav-number">23.2.</span> <span class="nav-text"><select>元素（下拉列表）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#textarea元素定义多行输入字段（文本域）"><span class="nav-number">23.3.</span> <span class="nav-text">textarea元素定义多行输入字段（文本域）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#button元素定义可点击的按钮，上面的submit也会自动生成一个按钮，这个按钮的功能单一，只是用于向服务器提交表单"><span class="nav-number">23.4.</span> <span class="nav-text">button元素定义可点击的按钮，上面的submit也会自动生成一个按钮，这个按钮的功能单一，只是用于向服务器提交表单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html5新增表单元素"><span class="nav-number">23.5.</span> <span class="nav-text">html5新增表单元素</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html输入类型-本章描述-lt-input元素的输入类型-gt"><span class="nav-number">24.</span> <span class="nav-text">html输入类型,本章描述<input元素的输入类型></span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html输入属性"><span class="nav-number">25.</span> <span class="nav-text">html输入属性</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/
+busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">mkitture</span>
+
+  
+</div>
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+    
+
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2149144"></script>
+      <!-- UY END -->
+    
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
