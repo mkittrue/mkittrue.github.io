@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="mkitture的博客">
 <meta property="og:description" content="css可以将html中标记文本的多个标签写到一起去，简化html的格式">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-27T12:37:31.048Z">
+<meta property="og:updated_time" content="2017-11-27T14:19:15.747Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css样式">
 <meta name="twitter:description" content="css可以将html中标记文本的多个标签写到一起去，简化html的格式">
@@ -171,7 +171,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">种一棵树最好的时候是十年前，其次是现在！</p>
+        <p class="site-subtitle">疾风知劲草，智者必怀仁</p>
       
   </div>
 
@@ -326,7 +326,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  962
+                  1,767
                 </span>
               
 
@@ -342,7 +342,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  8
                 </span>
               
             </div>
@@ -367,10 +367,10 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><div id="aplayer4" class="aplayer" style="margin-bottom: 20px;"></div>
+        <script src="/assets/js/APlayer.min.js"> </script><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer4"),
+				element: document.getElementById("aplayer0"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -388,10 +388,17 @@
 <h1 id="CSS文本"><a href="#CSS文本" class="headerlink" title="CSS文本"></a>CSS文本</h1><p>CSS文本属性可以定义文本的外观，修改颜色，字符家具，对齐文本，装饰文本，对文本进行缩进<br>缩进文本<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;text-indent:5em;&#125;</span><br></pre></td></tr></table></figure></p>
 <p>缩进的继承<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">div#outer &#123;width: 500px;&#125;</span><br><span class="line">div#inner &#123;text-indent: 10%;&#125;</span><br><span class="line">p &#123;width: 200px;&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"inner"</span>&gt;</span>some text. some text. some text.</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>this is a paragragh.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>水平对齐<br>text-align是一个基本属性，它会影响一个元素中的文本行互相之间的对齐方式，left、right、center和justify<br>字间隔<br>word-spacing 可以改变单词之间的标准间隔，其默认值为normal与设置值为0是一样的<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">p.spread &#123;word-spacing: <span class="number">30</span>px;&#125;</span><br><span class="line">p.tight &#123;word-spacing: <span class="number">-0.5</span>em;&#125;</span><br><span class="line"></span><br><span class="line">&lt;p <span class="class"><span class="keyword">class</span></span>=<span class="string">"spread"</span>&gt;</span><br><span class="line">This is a paragraph. The spaces between words will be increased.</span><br><span class="line">&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;p class="tight"&gt;</span></span><br><span class="line"><span class="regexp">This is a paragraph. The spaces between words will be decreased.</span></span><br><span class="line"><span class="regexp">&lt;/</span>p&gt;</span><br></pre></td></tr></table></figure></p>
-<p>字母间隔：letter-spacing与word-spacing的区别在于，字母间隔修改的是字符或字母之间的间隔<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">h1 &#123;letter-spacing: <span class="number">-0.5</span>em&#125;</span><br><span class="line">h4 &#123;letter-spacing: <span class="number">20</span>px&#125;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;This is header <span class="number">1</span>&lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">&lt;h4&gt;This is header 4&lt;/</span>h4&gt;</span><br></pre></td></tr></table></figure></p>
-<p>字符转换<br>text-transform属性处理文本的大小写，这个属性有4个值“none，uppercase(全部转为大写)，lowercase（全部转为小写）和capitalize<br>    h1{text-transform: uppercase}</p>
-<p>文本装饰<br>text-decoration属性，这个属性有5个值：none，underline,overline,line-through,blink<br>    a{text-decoration: none;}<br>还可以在一个规则中结合多种装束，如果希望所有超链接既有下划线，又有上划线，规则如下：<br>    a:link a:visited{text-decoration:underline overline;}</p>
-<p>不过要主要的是，如果两个不同的装饰都与同一元素匹配，胜出规则的值会完全取代另一个值，<br>    h2.stricken{text-decoration: line-through;}<br>    h2{text-decoration: underline overline;}<br>处理空白符<br>white-space属性会影响到用户代理对源文档中的空格、换行和tab字符的处理，其值有：normal,pre,nowrap,pre-wrap和pre-line<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;This is paragraph has many spaces   <span class="keyword">in</span> it.&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">p&#123;whit-space: normal&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>字母间隔：letter-spacing与word-spacing的区别在于，字母间隔修改的是字符或字母之间的间隔<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">h1 &#123;letter-spacing: <span class="number">-0.5</span>em&#125;</span><br><span class="line">h4 &#123;letter-spacing: <span class="number">20</span>px&#125;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;This is header <span class="number">121</span><span class="string">``</span>/h1&gt;</span><br><span class="line">&lt;h4&gt;This is header <span class="number">4</span>&lt;<span class="regexp">/h4&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>字符转换<br>text-transform属性处理文本的大小写，这个属性有4个值“none，uppercase(全部转为大写)，lowercase（全部转为小写）和capitalize</p>
+<pre><code>h1{text-transform: uppercase}
+</code></pre><p>文本装饰<br>text-decoration属性，这个属性有5个值：none，underline,overline,line-through,blink</p>
+<pre><code>a{text-decoration: none;}
+</code></pre><p>还可以在一个规则中结合多种装束，如果希望所有超链接既有下划线，又有上划线，规则如下：</p>
+<pre><code>a:link a:visited{text-decoration:underline overline;}
+</code></pre><p>不过要主要的是，如果两个不同的装饰都与同一元素匹配，胜出规则的值会完全取代另一个值，</p>
+<pre><code>h2.stricken{text-decoration: line-through;}
+h2{text-decoration: underline overline;}
+</code></pre><p>处理空白符<br>white-space属性会影响到用户代理对源文档中的空格、换行和tab字符的处理，其值有：normal,pre,nowrap,pre-wrap和pre-line<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;This is paragraph has many spaces   <span class="keyword">in</span> it.&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">p&#123;whit-space: normal&#125;</span></span><br></pre></td></tr></table></figure></p>
 <p>值pre<br>将white-space设置为pre，受这个属性影响的元素中，空白符的处理就有所不同<br>white-space属性的行为</p>
 <pre><code>值                 空白符                换行符
 pre-lien         合并                 保留
@@ -400,6 +407,33 @@ nowrap            合并                忽略
 pre             保留                保留
 pre-wrap         保留                 保留
 </code></pre><p>文本方向<br>direction属性影响块级元素文本的书写方向、表中列布局的方向、内容水平填充其元素框的方向，以及两端对齐元素中的最后一行的位置，对于行内元素，只有当unicode-bidi属性设置为embed或bidi-override时才会调用direction属性。<br>direction属性值对应有两个分别为：ltr和rtl</p>
+<h1 id="CSS字体"><a href="#CSS字体" class="headerlink" title="CSS字体"></a>CSS字体</h1><font color="red">字体系列font-family</font>&gt;<br>例如:body{font-family:Serif字体，Sans-serif字体,Monospace字体,Cursive字体和Fantasy字体}<br><font color="red">字体风格font-style</font>&gt;<br>例如：font-style:normal文本正常显示 italic文本斜体显示 oblique文本倾斜显示<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p.normal&#123;font-style:normal;&#125;</span><br><span class="line">p.italic&#123;font-style:italic;&#125;</span><br><span class="line">p.oblique&#123;font-style:oblique;&#125;</span><br></pre></td></tr></table></figure><br><br><font color="red">字体变形font-variant可以设定小型大写字母</font><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;font-variant:small-caps;&#125;</span><br></pre></td></tr></table></figure><br><br><font color="red">字体加粗font-weight属性设置文本的粗细</font><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p.normal &#123;font-weight:normal;&#125;</span><br><span class="line">p.thick &#123;font-weight:bold;&#125;</span><br><span class="line">p.thicker &#123;font-weight:900;&#125;</span><br></pre></td></tr></table></figure><br><br><font color="red">字体大小font-size(单位多种，如60px,em，百分比)</font>
+
+<h1 id="CSS链接：以不同的方式为链接设置样式"><a href="#CSS链接：以不同的方式为链接设置样式" class="headerlink" title="CSS链接：以不同的方式为链接设置样式"></a>CSS链接：以不同的方式为链接设置样式</h1><p>链接样式的属性包括：color,font-family,background<br>链接的四种状态：</p>
+<pre><code>a:link               普通的，未被访问的链接
+a:visited              用户已访问的链接
+a:hover              鼠标指针位于链接的上方
+a:active              链接被点击的时刻
+</code></pre><h1 id="CSS列表：允许改变属性放置、改变列表项标志，或者将图像作为列表项标志"><a href="#CSS列表：允许改变属性放置、改变列表项标志，或者将图像作为列表项标志" class="headerlink" title="CSS列表：允许改变属性放置、改变列表项标志，或者将图像作为列表项标志"></a>CSS列表：允许改变属性放置、改变列表项标志，或者将图像作为列表项标志</h1><p>例如，在一个无序列表中，列表项的标志是出现在各项表项旁边的圆点，在有序列表中，标志可能是字母、数字或另外某种计数体系中的一个符号<br>要修改用于列表项的标志类型，可以使用属性：list-style-type</p>
+<pre><code>ul{list-style-type:square}
+</code></pre><p>使用列表项图像list-style-image</p>
+<pre><code>ul li{list-style-image :url(xxx.gif)}
+</code></pre><p>使用列表标志位置list-style-position</p>
+<pre><code>li{list-style:url(example.gif) quare indide}
+</code></pre><h1 id="CSS表格（可以帮助极大改善表格的外观）"><a href="#CSS表格（可以帮助极大改善表格的外观）" class="headerlink" title="CSS表格（可以帮助极大改善表格的外观）"></a>CSS表格（可以帮助极大改善表格的外观）</h1><p><font color="red">表格边框，如需在CSS中设置表格边框，请使用border属性</font><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">table,th,td&#123;</span><br><span class="line">	border: 1px solid blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><font color="red">折叠边框border-collapse</font><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">table&#123;</span><br><span class="line">	border-collapse:collapse;</span><br><span class="line">&#125;</span><br><span class="line">table,th,td&#123;</span><br><span class="line">	border: 1px solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><font color="red">表格宽度和高度width和height</font><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">table&#123;</span><br><span class="line">	width:100%;</span><br><span class="line">&#125;</span><br><span class="line">th&#123;</span><br><span class="line">	height: 50px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><font color="red">表格文本对齐text-align和vertical-align</font><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">td&#123;</span><br><span class="line">	text-align:right;</span><br><span class="line">&#125;</span><br><span class="line">td&#123;</span><br><span class="line">	height:50px;</span><br><span class="line">	vertical-align:bottom;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><font color="red">表格内边框，如需控制表格中内容与边框的距离，请为td和th元素设置padding的属性</font><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">td&#123;</span><br><span class="line">	padding:15px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><font color="red">表格颜色</font><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">table,td,th&#123;</span><br><span class="line">	border:1px solid green;</span><br><span class="line">&#125;</span><br><span class="line">th&#123;</span><br><span class="line">	background-color:green;</span><br><span class="line">	color:white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>CSS Table属性</p>
+<pre><code>属性                                            描述
+border-collapse                                    设置是否把表格边框合并为单一的边框
+border-spacing                                    设置分隔单元格边框的距离
+caption-side                                    设置表格标题的位置
+empty-cells                                        设置是否显示表格中的空单元格
+table-layout                                    设置显示单元、行和列的算法
+</code></pre><h1 id="CSS轮廓"><a href="#CSS轮廓" class="headerlink" title="CSS轮廓"></a>CSS轮廓</h1><p>轮廓（outline）是绘制与元素周围的一条线，位于边框外缘的外围，可以起到突出元素的作用，CSS outline属性规定元素轮廓的样式、颜色和宽度<br>包括：outline-style，outline-color,outline-wid<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">p </span></span><br><span class="line"><span class="undefined">&#123;</span></span><br><span class="line"><span class="undefined">border:red solid thin;</span></span><br><span class="line"><span class="undefined">outline:#00ff00 dotted thick(定于了段落p的外围轮廓);</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>注释：<span class="tag">&lt;/<span class="name">b</span>&gt;</span>只有在规定了 !DOCTYPE 时，Internet Explorer 8 （以及更高版本） 才支持 outline 属性。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -631,7 +665,7 @@ pre-wrap         保留                 保留
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS文本"><span class="nav-number">1.</span> <span class="nav-text">CSS文本</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS文本"><span class="nav-number">1.</span> <span class="nav-text">CSS文本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS字体"><span class="nav-number">2.</span> <span class="nav-text">CSS字体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS链接：以不同的方式为链接设置样式"><span class="nav-number">3.</span> <span class="nav-text">CSS链接：以不同的方式为链接设置样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS列表：允许改变属性放置、改变列表项标志，或者将图像作为列表项标志"><span class="nav-number">4.</span> <span class="nav-text">CSS列表：允许改变属性放置、改变列表项标志，或者将图像作为列表项标志</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS表格（可以帮助极大改善表格的外观）"><span class="nav-number">5.</span> <span class="nav-text">CSS表格（可以帮助极大改善表格的外观）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS轮廓"><span class="nav-number">6.</span> <span class="nav-text">CSS轮廓</span></a></li></ol></div>
             
 
           </div>
