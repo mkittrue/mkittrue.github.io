@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="mkitture的博客">
 <meta property="og:description" content="javascript">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-29T09:01:51.690Z">
+<meta property="og:updated_time" content="2017-11-29T09:57:26.985Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript基础要点">
 <meta name="twitter:description" content="javascript">
@@ -348,7 +348,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  6,254
+                  6,531
                 </span>
               
 
@@ -364,7 +364,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  28
+                  30
                 </span>
               
             </div>
@@ -389,10 +389,10 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><div id="aplayer4" class="aplayer" style="margin-bottom: 20px;"></div>
+        <script src="/assets/js/APlayer.min.js"> </script><div id="aplayer6" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer4"),
+				element: document.getElementById("aplayer6"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -632,7 +632,10 @@ atan2()                    Math.atan2(y,x)                                返回
 ceil()                    Math.ceil(x)                                对一个数进行上舍入，返回大于或等于指定参数的最小值
 floor()                    Math.floor(x)                                返回小于或等于指定参数的最大值
 exp()                    Math.exp(x)                                    返回e的x次幂的值
-</code></pre>
+</code></pre><p>实例：随机生成一个数，并求其平方，平方根和自然对数</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>随机产生整数，计算其平方，平方根，自然对数<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"text_11.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span> <span class="attr">name</span>=<span class="string">"myform"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">name</span>=<span class="string">"randNum"</span> <span class="attr">value</span>=<span class="string">"随机数"</span> <span class="attr">onclick</span>=<span class="string">"randomNum()"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    随机数为：<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"num"</span> <span class="attr">id</span>=<span class="string">"num"</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">name</span>=<span class="string">"result"</span> <span class="attr">value</span>=<span class="string">"运算结果"</span> <span class="attr">onclick</span>=<span class="string">"calResult()"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    其平方为：<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"pingfang"</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    其平方根为:<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"pingfanggen"</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    其自然对数为：<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"ziranduishu"</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>js文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">randomNum</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//产生0-1之间的随机数</span></span><br><span class="line">    <span class="keyword">var</span> newNum=<span class="built_in">Math</span>.random()*<span class="number">101</span>;</span><br><span class="line">    newNum=<span class="built_in">Math</span>.round(newNum);</span><br><span class="line">    <span class="built_in">document</span>.myform.num.value=newNum;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calResult</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//获取文本框中的值，不能用document.form.value的方式，注意理解</span></span><br><span class="line">    <span class="keyword">var</span> num=<span class="built_in">document</span>.getElementById(<span class="string">"num"</span>).value;</span><br><span class="line">    pingfang=num * num;</span><br><span class="line">    <span class="built_in">document</span>.myform.pingfang.value=pingfang;</span><br><span class="line">    pingfanggen=<span class="built_in">Math</span>.sqrt(num);</span><br><span class="line">    <span class="built_in">document</span>.myform.pingfanggen.value=pingfanggen;</span><br><span class="line">    zidui=<span class="built_in">Math</span>.log(num);</span><br><span class="line">    <span class="built_in">document</span>.myform.ziranduishu.value=zidui;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
