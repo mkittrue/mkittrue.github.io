@@ -158,7 +158,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Búsqueda">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -244,10 +244,10 @@
                                                                                   数据库
 
                                           CGI的操作过程
-</code></pre><p>类比java程序，CGI程序的语言主要有两种Perl和shell脚本(java，c，c++均可)，CGI可以访问存储数据库中的数据或者其他系统中的文件，实现动态生成效果。<br>不足之处：<br>    每个请求均需要启动一个可执行的CGI程序，如果请求频繁。。。<br>    为了解决这个问题，改进的CGI诞生了，即所谓的Java Servert，本质上是程序（在Java中程序是以类为单位的，没毛病吧？，这其实也是servert比CGI的高明之处，CGI有点像面向过程，而Servlet面向对象，可供多个对象同时调用），用于处理来自浏览器的指令（网址），并向浏览器输出html代码，该程序提供了多种类及其方法却没有main方法，所以不能主动执行，由web服务器如（Tomcat）调用Servlet的中的方法来实现。<br><div id="aplayer4" class="aplayer" style="margin-bottom: 20px;"></div>
+</code></pre><p>类比java程序，CGI程序的语言主要有两种Perl和shell脚本(java，c，c++均可)，CGI可以访问存储数据库中的数据或者其他系统中的文件，实现动态生成效果。<br>不足之处：<br>    每个请求均需要启动一个可执行的CGI程序，如果请求频繁。。。<br>    为了解决这个问题，改进的CGI诞生了，即所谓的Java Servert，本质上是程序（在Java中程序是以类为单位的，没毛病吧？，这其实也是servert比CGI的高明之处，CGI有点像面向过程，而Servlet面向对象，可供多个对象同时调用），用于处理来自浏览器的指令（网址），并向浏览器输出html代码，该程序提供了多种类及其方法却没有main方法，所以不能主动执行，由web服务器如（Tomcat）调用Servlet的中的方法来实现。<br><div id="aplayer3" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer4"),
+				element: document.getElementById("aplayer3"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -273,7 +273,7 @@
     <div class="content">
         
 <span class="post-time">
-    Última actualización<time datetime="2017-12-26T14:09:49.196Z" itemprop="dateUpdated">2017-12-26 22:09:49</time>
+    Last updated: <time datetime="2017-12-26T14:09:49.196Z" itemprop="dateUpdated">2017-12-26 22:09:49</time>
 </span>
 
 
@@ -368,8 +368,8 @@
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/11/19/2017119/" id="post-next" class="post-nav-link">
-        <h4 class="title" data-hover="下一篇：。。。">下一篇：。。。</h4>
+      <a href="/2017/11/19/当下的问题/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：初步看书后的困扰">下一篇：初步看书后的困扰</h4>
       </a>
     </div>
   
@@ -425,7 +425,7 @@
         </span>
         <br/>
 
-        <span class="license">Este blog está licenciado bajo una <a rel="license" rel="external nofollow" href="https://creativecommons.org/licenses/by/4.0/">licencia internacional Creative Commons Attribution 4.0</a>.</span>
+        <span class="license">This blog is licensed under a <a rel="license" rel="external nofollow" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
     </div>
 </footer>
 
