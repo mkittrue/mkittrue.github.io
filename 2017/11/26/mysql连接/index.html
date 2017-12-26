@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta charset="utf-8">
+    
+    
+    
+    <title>No title | mkitture的博客 | 疾风知劲草，智者必怀仁</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    
+    <meta name="theme-color" content="#77AAFF">
+    
+    
+    <meta name="keywords" content="">
+    
+    
+
+    
+
+    <!-- Baidu Push -->
+<script>
+	(function(){
+		var bp = document.createElement('script');
+		var curProtocol = window.location.protocol.split(':')[0];
+		if (curProtocol === 'https') {
+			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+		}
+		else {
+			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		}
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(bp, s);
+	})();
+
+	var _hmt = _hmt || [];
+</script>
+
+
+
+    
+    <meta name="description" content="title: jdbc方式连接sqldate: 2017-11-26 14:27:48tags: [mysql,JDBC,数据库连接]categories:   数据库description: JDBC（java database connectivity）是一种有关数据库连接的技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="No title">
+<meta property="og:url" content="http://yoursite.com/2017/11/26/mysql连接/index.html">
+<meta property="og:site_name" content="mkitture的博客">
+<meta property="og:description" content="title: jdbc方式连接sqldate: 2017-11-26 14:27:48tags: [mysql,JDBC,数据库连接]categories:   数据库description: JDBC（java database connectivity）是一种有关数据库连接的技术">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-26T12:24:38.211Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="No title">
+<meta name="twitter:description" content="title: jdbc方式连接sqldate: 2017-11-26 14:27:48tags: [mysql,JDBC,数据库连接]categories:   数据库description: JDBC（java database connectivity）是一种有关数据库连接的技术">
+    
+        <link rel="alternate" type="application/atom+xml" title="mkitture的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link id="style" rel="stylesheet" href="/css/style.css?v=3.0">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+            
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+    <aside id="menu"  class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" >
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg" alt="avatar">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname" id="name">mkitture</h5>
+          
+            <div id="yiyanmotto" class="motto">&nbsp;</div>
+          
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+              <li class="waves-block waves-effect">
+                  <a href="/"  >
+                    <i class="icon icon-lg icon-home"></i>
+                    <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="/archives"  >
+                    <i class="icon icon-lg icon-archives"></i>
+                    <span>归 档</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="/categories"  >
+                    <i class="icon icon-lg icon-th-list"></i>
+                    <span>分 类</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="/tags"  >
+                    <i class="icon icon-lg icon-tags"></i>
+                    <span>标 签</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="/about"  >
+                    <i class="icon icon-lg icon-smile-o"></i>
+                    <span>关 于</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+      <div class="nav2">
+          
+              <a class="nav2item" data-title="Email" href="mailto:1755811882@qq.com" target="_parent"title="Email" >
+                <i class="icon icon-lg icon-envelope-o envelope-o"></i>
+              </a>
+          
+              <a class="nav2item" data-title="Github" href="https://github.com/tomotoes" target="_blank"title="Github" >
+                <i class="icon icon-lg icon-github github"></i>
+              </a>
+          
+              <a class="nav2item" data-title="微博" href="https://weibo.com/u/6179399347" target="_blank"title="微博" >
+                <i class="icon icon-lg icon-weibo weibo"></i>
+              </a>
+          
+
+            </div>
+        
+      </ul>
+        
+    </div>
+  </div>
+ 
+</aside>
+
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis"></div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Zoeken">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        <a href="../../atom.xml" target="_blank" class="header-icon waves-effect waves-circle waves-light" id="Rss">
+            <i class="icon icon-lg icon-rss"></i>
+        </a>
+    </div>
+</header>
+<header class="content-header post-header">
+    
+    
+    <div class="container fade-scale">
+        <div id="myheader">
+            <h1 class="title">
+                
+            </h1>
+            <h5 class="subtitle">
+                
+                
+            </h5>
+        </div>
+    </div>
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#JDBC基础知识"><span class="post-toc-number">1.</span> <span class="post-toc-text">JDBC基础知识</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#DirverManager类的常用方法"><span class="post-toc-number">2.</span> <span class="post-toc-text">DirverManager类的常用方法</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Connection类的常用方法"><span class="post-toc-number">3.</span> <span class="post-toc-text">Connection类的常用方法</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Statement接口（在此嵌入、发送sql语句）"><span class="post-toc-number">4.</span> <span class="post-toc-text">Statement接口（在此嵌入、发送sql语句）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#可执行动态SQL的接口PreparedStatement"><span class="post-toc-number">5.</span> <span class="post-toc-text">可执行动态SQL的接口PreparedStatement</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#操作数据库的步骤"><span class="post-toc-number">6.</span> <span class="post-toc-text">操作数据库的步骤</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#示例"><span class="post-toc-number">7.</span> <span class="post-toc-text">示例</span></a></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-mysql连接"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title"></h1>
+        <div class="post-meta">
+            <i class="icon icon-lg icon-calendar-o"></i>
+            发表于
+            <time class="post-time" title="2017-11-26 14:27:48" datetime="2017-11-26T06:27:48.836Z"  itemprop="datePublished">2017-11-26</time>
+
+            <br id="mybreak"/>
+            
+<script>
+	mybreak.style="display:none";
+</script>
+
+
+            <i>·</i>
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>次浏览
+</span>
+
+
+        </div>
+        <div class="post-count-custom">
+            <i class="icon icon-lg icon-comment-o"></i>
+            阅读本文可能花费您&nbsp;<span class="post-count">3</span>&nbsp;分钟
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <script src="/assets/js/APlayer.min.js"> </script><hr>
+<p>title: jdbc方式连接sql<br>date: 2017-11-26 14:27:48<br>tags: [mysql,JDBC,数据库连接]<br>categories: </p>
+<ul>
+<li>数据库<br>description: JDBC（java database connectivity）是一种有关数据库连接的技术</li>
+</ul>
+<a id="more"></a>
+<div id="aplayer7" class="aplayer" style="margin-bottom: 20px;"></div>
+		<script>
+			new APlayer({
+				element: document.getElementById("aplayer7"),
+				narrow: false,
+				autoplay: true,
+				showlrc: 0,
+				music: {
+					title: "相思",
+					author: "毛阿敏",
+					url: "http://ozjh9fb7b.bkt.clouddn.com/%E6%AF%9B%E9%98%BF%E6%95%8F%20-%20%E7%9B%B8%E6%80%9D.mp3",
+					pic: "",
+				}
+			});
+		</script>
+<h1 id="JDBC基础知识"><a href="#JDBC基础知识" class="headerlink" title="JDBC基础知识"></a>JDBC基础知识</h1><p>JDBC是一种底层的API<br>通过编写java程序，调用标准的sql语句访问数据库，（只需要在程序的业务逻辑中嵌入sql）<br>JDBC不能直接访问数据库，必须依赖数据库厂商提供的JDBC驱动<br>JDBC同数据库完成以下三个工作：</p>
+<ul>
+<li>同数据库建立连接</li>
+<li>向数据库发送sql语句</li>
+<li>处理从数据库返回的结果<br>JDBC提供了很多的类和接口，实现与数据库的连接，这些接口位于java.sql中</li>
+</ul>
+<h1 id="DirverManager类的常用方法"><a href="#DirverManager类的常用方法" class="headerlink" title="DirverManager类的常用方法"></a>DirverManager类的常用方法</h1><p>getConnection(String url,String user,String password)<br>url：连接数据库的urL;user：用户名；password:密码<br>setLoginTimeout()<br>获取驱动程序试图登录到某一数据库时可以等待的最长时间，以秒为单位<br>println(String message)<br>将一条消息打印到当前的JDBC日志</p>
+<h1 id="Connection类的常用方法"><a href="#Connection类的常用方法" class="headerlink" title="Connection类的常用方法"></a>Connection类的常用方法</h1><p>createStatement()<br>创建并返回一个Statement实例，通常在执行无参的sql语句时创建的实例<br>prepareStatement()<br>创建并返回一个<br>println(String message)<br>commit()<br>rollback()<br>close()</p>
+<h1 id="Statement接口（在此嵌入、发送sql语句）"><a href="#Statement接口（在此嵌入、发送sql语句）" class="headerlink" title="Statement接口（在此嵌入、发送sql语句）"></a>Statement接口（在此嵌入、发送sql语句）</h1><p>execute(String sql)<br>执行静态的SELECT语句，该语句可能返回多个结果集<br>executeQuery(String sql)<br>执行给定的SQL语句，该语句返回单个ResultSet对象<br>clearBatch()<br>清空此Statement对象的当前SQL命令列表<br>addBatch(String sql)<br>将给定的SQL命令添加到此Statement对象的当前列表中。如果驱动程序不支持批量处理将抛出异常<br>close()<br>释放Statement实例占用的数据库和JDBD资源                    </p>
+<h1 id="可执行动态SQL的接口PreparedStatement"><a href="#可执行动态SQL的接口PreparedStatement" class="headerlink" title="可执行动态SQL的接口PreparedStatement"></a>可执行动态SQL的接口PreparedStatement</h1><h1 id="操作数据库的步骤"><a href="#操作数据库的步骤" class="headerlink" title="操作数据库的步骤"></a>操作数据库的步骤</h1><pre><code>加载JDBC驱动程序    Class.forname(String driverManager)
+例如：try{
+Class.forname(&quot;net.source.jtds.jdbc.Driver&quot;);
+}catch(ClassNotFoundException e){
+ e.printStackTrace();
+}
+创建数据库连接
+Connection conn=DriverManager.getConnection(String url,String user,String password);
+</code></pre><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GetConn</span></span>&#123;</span><br><span class="line">	<span class="keyword">public</span> Connection conn= <span class="keyword">null</span>;<span class="comment">//创建Connection的对象</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Connection <span class="title">getConnection</span><span class="params">()</span></span>&#123;<span class="comment">//获取数据库连接的方法</span></span><br><span class="line">		<span class="keyword">try</span>&#123;</span><br><span class="line">			Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);<span class="comment">//加载数据库的驱动</span></span><br><span class="line">			<span class="comment">//指定连接数据库的URL</span></span><br><span class="line">			String url = <span class="string">"jdbc:mysql://localhost:3306/labmemberinfo"</span>;</span><br><span class="line">			String user= <span class="string">"root"</span>;</span><br><span class="line">			String password = <span class="string">"123456"</span>;</span><br><span class="line">			conn = DriverManager.getConnection(url,user,password);</span><br><span class="line">			<span class="keyword">if</span>(conn != <span class="keyword">null</span>)&#123;</span><br><span class="line">				System.out.println(<span class="string">"数据库连接成功"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;<span class="comment">//异常处理</span></span><br><span class="line">		<span class="keyword">return</span> conn;<span class="comment">//返回connection对象</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;<span class="comment">//创建GetConn对象</span></span><br><span class="line">		GetConn getConn=<span class="keyword">new</span> GetConn();</span><br><span class="line">		getConn.getConnection();<span class="comment">//调用连接数据库的方法</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Laatste update: <time datetime="2017-12-26T12:24:38.211Z" itemprop="dateUpdated">2017-12-26 20:24:38</time>
+</span>
+
+
+        
+        原文链接：<a href="/2017/11/26/mysql连接/" target="_blank" rel="external">http://yoursite.com/2017/11/26/mysql连接/</a>
+        
+    </div>
+    <footer>
+        <div onclick="location.href='http://yoursite.com'">
+            <img src="/img/avatar.jpg" alt="mkitture">
+            <a>mkitture</a>
+        </div>
+    </footer>
+</blockquote>
+
+        
+    <div class="page-reward">
+        <nav class="myreward">
+            <a id="rewardBtn" href="javascript:;"><span>打&nbsp;赏</span><span>装成好像很多人打赏的样子</span></a>
+        </nav>
+    </div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/11/26/mysql连接/&title=mkitture的博客&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/11/26/mysql连接/&title=mkitture的博客&source=
+title: jdbc方式连接sqldate: 2017-11-26 14:27:48tags: [mysql,JDBC,数据库连接]categorie..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/11/26/mysql连接/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=mkitture的博客&url=http://yoursite.com/2017/11/26/mysql连接/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/11/26/mysql连接/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/11/27/html/" id="post-prev" class="post-nav-link">
+        <h4 class="title" >
+          上一篇：html知识概要
+        </h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/11/23/Java Web整合开发1/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：[no title]">下一篇：[no title]</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+    
+
+    
+
+    
+
+
+</article>
+
+</div>
+
+        <footer class="footer">
+    <div class="footer-content">
+        <span class="power">
+            <i class="icon icon-lg icon-copyright"></i>
+            2017
+            <i class="icon icon-lg icon-heart"></i>
+            <a href="http://yoursite.com">tomotoes.com</a>
+            <br/>
+            Power by
+            <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>&nbsp;·&nbsp;
+            Theme
+            <a class="tomotoeslink" href="https://github.com/tomotoes/hexo-theme-tomotoes/" target="_blank" rel="external nofollow">tomotoes</a>
+        </span>
+
+        <br/>
+
+        <span id="RunTime" style="color:#a7a7a2;"></span>
+        <br/>
+
+        <span>
+            
+	<i class="icon icon-lg icon-user">
+<span id="busuanzi_container_site_uv" style='display:none'>
+       访问用户：<span id="busuanzi_value_site_uv"></span>
+    </span>人</i>
+    ·
+    <i class="icon icon-lg icon-eye">
+    <span id="busuanzi_container_site_pv" style='display:none'>
+      访问次数：<span id="busuanzi_value_site_pv"></span>
+    </span>次
+    </i>
+
+
+        </span>
+        <br/>
+
+        <span class="license">Deze blog valt onder de <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International Licentie</a>.</span>
+    </div>
+</footer>
+
+    </main>
+    
+        
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        <span>感谢您的鼓励支持！</span>
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" data-img="/img/dog.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.png" data-alipay="/img/alipay.png">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechatPay">&nbsp;&nbsp;微信&nbsp;&nbsp;</span>
+                <span class="reward-toggle-item alipayPay">支付宝</span>
+            </div>
+        </label>
+        
+        <i class="icon icon-caret-up"></i>
+    </div>
+</div>
+
+
+    
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/11/26/mysql连接/&title=《No title》 — mkitture的博客&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/11/26/mysql连接/&title=《No title》 — mkitture的博客&source=
+title: jdbc方式连接sqldate: 2017-11-26 14:27:48tags: [mysql,JDBC,数据库连接]categorie..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/11/26/mysql连接/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — mkitture的博客&url=http://yoursite.com/2017/11/26/mysql连接/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/11/26/mysql连接/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p class="wechatshare">扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2017/11/26/mysql连接/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <!-- waves按钮特效 -->
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<!-- 主题配置脚本 -->
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+</script>
+
+<!-- jquery -->
+<script src="/js/jquery.min.js?v=3.0"></script>
+
+<!-- 搜索 -->
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item waves-block waves-effect" onclick="location.href='{path}'">
+    <div class="title ellipsis" title="{title}">{title}</div>
+</li>
+</template>
+
+
+<!-- main博客脚本 -->
+<script src="/js/main.min.js?v=3.0" ></script>
+
+<!-- 动画&配置 -->
+<script src="/js/script.min.js?v=3.0" ></script>
+
+<!-- 脚本管理 -->
+<script>
+
+if(window.innerWidth > 800){
+	/* 3D标题 */
+	$(".content-header").on("mousemove", threedee);
+
+	/* 底部追随鼠标 */
+	$(".footer").hover(2);
+
+	/* gotop键的涟漪 */
+	$("#gotop").hover(1);
+
+	/* 赞赏的粒子雨 */
+	$("#reward").hover(3);
+
+	/* 微信公众号的底部渲染 */
+	$("#wechat").hover(4);
+
+    /* 标题跳动 */
+    $(".archivestitle").bumpyText();
+
+	/* 图片点击放大 */
+	const postimg = jQuery(".post-content img:not(.github-emoji)");
+	postimg.on("click",function(){
+
+		mask.classList.add("in");
+		main.classList.add("Mask");
+		menu.classList.add("Mask");
+		var myimg = this.cloneNode(true);
+		myimg.classList.add("imgShow");
+
+		setTimeout(function(){
+			jQuery(myimg).animate({
+				opacity:"1"
+			},1000);
+		},0);
+
+		document.body.appendChild(myimg);
+
+		myimg.onclick=function(){
+			document.body.removeChild(myimg);
+			mask.classList.remove("in");
+			main.classList.remove("Mask");
+			menu.classList.remove("Mask");
+		};
+
+	});
+
+}
+
+/* 名字跳动 */
+$("#name").bumpyText();
+
+
+/* 网站运行时间 */
+setInterval(function () {
+	setTime("2017/10/11");
+}, 1000);
+
+/* 文章块的淡出 */
+postshow();
+
+/* 座右铭 */
+
+   getHitokoto();
+
+
+
+/* 粘贴提示 */
+G($(".post-content"), location.href, "mkitture");
+
+
+/* 控制台 */
+if (window.console && window.console.log) {
+	setTimeout(function () {
+		console.log("\n %c 一个坏掉的番茄 %c  © Simon Ma  http://tomotoes.com \n\n", "color:#FFFFFB;background:#1abc9c;padding:5px 0;border-radius:.5rem 0 0 .5rem;", "color:#FFFFFB;background:#080808;padding:5px 0;border-radius:0 .5rem .5rem 0;");
+	}, 0);
+}
+
+</script>
+
+
+
+
+<!-- 公式渲染 -->
+
+
+
+<!-- 不蒜子 -->
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+</body>
+</html>
