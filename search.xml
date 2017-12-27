@@ -342,10 +342,10 @@
 <a id="more"></a>
 <p>感觉时间不够用了啊现在，目前的问题在于，单位希望三月份过去实习，一旦过去实习，就只能按照单位指的路走了，对咱这种非科班出身的人来说可不是一件好事啊，可能路会窄啊，这跟自己预想的有差距啊，另外，那边打算搞人工智能，自己想转到人工智能方向，也算没有浪费自己的硕士学历啊，想转的话，肯定要特么先把相关知识摸一遍啊，数学基础应该是没问题的哦，要有这个自信，毕竟考研什么的，而且从小到大，也就数学成绩能拿的出手了，呵呵，然后就是语言基础，python是肯定要学的，然后是机器学习的相关理论，这些都是要看书的啊，感觉自己看教学视频还是不适合，相比之下，一遍看书，一遍看电视剧或者电影可能更适合自己啊，效果也还不错（这个月刷了多少电视剧来着，风云系列、猎场、相爱十年，有的都特么刷好几遍了）</p>
 <p>接下里还要看哪些书呢，工作方面，当前还有个javascript，在下面一个月内与论文写作穿插进行吧，前端方面还差个oracle，jsp和spring，oracle这个就先不要系统的去学了，学下jsp和spring，跟着书练习两个小项目中间需要与数据库交互时，再针对性的看oracle或mysql吧，重点关注数据的增删查改，练习掌握基本的sql语句，作好整理、笔记，把知识点整理成md传上来；然后把java第二次再过一遍，这一遍穿插数据结构和算法，用java来实现</p>
-<div id="aplayer4" class="aplayer" style="margin-bottom: 20px;"></div>
+<div id="aplayer1" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer4"),
+				element: document.getElementById("aplayer1"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -460,10 +460,10 @@ table-layout                                    设置显示单元、行和列�
     <entry>
       <title><![CDATA[CSS基础教程]]></title>
       <url>/2017/11/27/CSS%E7%9F%A5%E8%AF%86%E6%A6%82%E8%A6%81/</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="aplayer1" class="aplayer" style="margin-bottom: 20px;"></div>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="aplayer2" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer1"),
+				element: document.getElementById("aplayer2"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -485,10 +485,10 @@ table-layout                                    设置显示单元、行和列�
 </ul>
 <p>例如，将h1元素内的文字颜色定义为红色，同时将字体大小设置为14像素<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">h1&#123;<span class="attr">color</span>:red;font-size:<span class="number">14</span>px&#125;</span><br><span class="line">p&#123;color:#ff0000&#125;</span><br></pre></td></tr></table></figure></p>
 <p>当值value为若干单词时，要给值加双引号<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;font-family:<span class="string">"sans serif"</span>&#125;</span><br></pre></td></tr></table></figure></p>
-<p>多重说明<br>p{<br>    text-align: center;<br>    color: black;<br>    font-family: arial;<br>}<br><div id="aplayer2" class="aplayer" style="margin-bottom: 20px;"></div>
+<p>多重说明<br>p{<br>    text-align: center;<br>    color: black;<br>    font-family: arial;<br>}<br><div id="aplayer3" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer2"),
+				element: document.getElementById("aplayer3"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -993,10 +993,10 @@ form elements
                                                                                   数据库
 
                                           CGI的操作过程
-</code></pre><p>类比java程序，CGI程序的语言主要有两种Perl和shell脚本(java，c，c++均可)，CGI可以访问存储数据库中的数据或者其他系统中的文件，实现动态生成效果。<br>不足之处：<br>    每个请求均需要启动一个可执行的CGI程序，如果请求频繁。。。<br>    为了解决这个问题，改进的CGI诞生了，即所谓的Java Servert，本质上是程序（在Java中程序是以类为单位的，没毛病吧？，这其实也是servert比CGI的高明之处，CGI有点像面向过程，而Servlet面向对象，可供多个对象同时调用），用于处理来自浏览器的指令（网址），并向浏览器输出html代码，该程序提供了多种类及其方法却没有main方法，所以不能主动执行，由web服务器如（Tomcat）调用Servlet的中的方法来实现。<br><div id="aplayer3" class="aplayer" style="margin-bottom: 20px;"></div>
+</code></pre><p>类比java程序，CGI程序的语言主要有两种Perl和shell脚本(java，c，c++均可)，CGI可以访问存储数据库中的数据或者其他系统中的文件，实现动态生成效果。<br>不足之处：<br>    每个请求均需要启动一个可执行的CGI程序，如果请求频繁。。。<br>    为了解决这个问题，改进的CGI诞生了，即所谓的Java Servert，本质上是程序（在Java中程序是以类为单位的，没毛病吧？，这其实也是servert比CGI的高明之处，CGI有点像面向过程，而Servlet面向对象，可供多个对象同时调用），用于处理来自浏览器的指令（网址），并向浏览器输出html代码，该程序提供了多种类及其方法却没有main方法，所以不能主动执行，由web服务器如（Tomcat）调用Servlet的中的方法来实现。<br><div id="aplayer4" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer3"),
+				element: document.getElementById("aplayer4"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
