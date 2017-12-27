@@ -75,10 +75,10 @@
       
         <script src="/assets/js/APlayer.min.js"> </script><p>实现简单的用户登录网站，具体功能有：提供一个登录界面（Login）,包括用户名，密码等；然后验证用户输入的信息是否正确（LoginCl），如果正确，跳转提示登录成功的界面；错误则返回到登录界面<br><a id="more"></a><br>主要知识点：页面的跳转</p>
 <h1 id="登录界面-Login-java-：通过html的方式实现，代码如下："><a href="#登录界面-Login-java-：通过html的方式实现，代码如下：" class="headerlink" title="登录界面(Login.java)：通过html的方式实现，代码如下："></a>登录界面(Login.java)：通过html的方式实现，代码如下：</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.zy.firstWeb;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.PrintWriter;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Login</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//处理get请求</span></span><br><span class="line">	<span class="comment">//req:用于获得客户端（浏览器）的信息</span></span><br><span class="line">	<span class="comment">//res:用于向客户端（浏览器）返回信息</span></span><br><span class="line">		</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req,HttpServletResponse res)</span></span>&#123;</span><br><span class="line">	<span class="comment">//业务逻辑</span></span><br><span class="line">			</span><br><span class="line">		<span class="keyword">try</span>&#123;</span><br><span class="line">				</span><br><span class="line">			<span class="comment">//中文乱码</span></span><br><span class="line">			res.setContentType(<span class="string">"text/html;charset=gbk"</span>);</span><br><span class="line">			PrintWriter pw=res.getWriter();</span><br><span class="line">			</span><br><span class="line">		</span><br><span class="line">			<span class="comment">//返回登录界面</span></span><br><span class="line">			pw.println(<span class="string">"&lt;html&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;body&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;h1&gt;登录界面&lt;h1&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;form action=servlet/LoginCI method=post&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"用户名:&lt;input type=text name=usrname&gt;&lt;br&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"密码:&lt;input type=password name=passwd&gt;&lt;br&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;input type=submit value=loing&gt;&lt;br&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;/form&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;/body&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;/html&gt;"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">catch</span>(Exception ex)&#123;</span><br><span class="line">				ex.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	<span class="comment">//处理post请求</span></span><br><span class="line">	<span class="comment">//req:用于获得客户端（浏览器）的信息</span></span><br><span class="line">	<span class="comment">//res:用于向客户端（浏览器）返回信息</span></span><br><span class="line">		</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req,HttpServletResponse res)</span></span>&#123;</span><br><span class="line">		<span class="comment">//用this传给get方法</span></span><br><span class="line">		<span class="keyword">this</span>.doGet(req,res);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<div id="aplayer4" class="aplayer" style="margin-bottom: 20px;"></div>
+<div id="aplayer5" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer4"),
+				element: document.getElementById("aplayer5"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -98,6 +98,8 @@
     
     <footer>
         <div class="alignright">
+          
+          <a href="/2017/11/23/Java-web项目开发实例/#comment" class="comment-link">评论</a>
           
           <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
         </div>
@@ -119,6 +121,30 @@
   </div>
 </article>
 
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+ <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMjczNC85Mjk1">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+
+</section>
 
 
 </div></div>

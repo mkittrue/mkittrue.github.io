@@ -342,10 +342,10 @@
 <a id="more"></a>
 <p>感觉时间不够用了啊现在，目前的问题在于，单位希望三月份过去实习，一旦过去实习，就只能按照单位指的路走了，对咱这种非科班出身的人来说可不是一件好事啊，可能路会窄啊，这跟自己预想的有差距啊，另外，那边打算搞人工智能，自己想转到人工智能方向，也算没有浪费自己的硕士学历啊，想转的话，肯定要特么先把相关知识摸一遍啊，数学基础应该是没问题的哦，要有这个自信，毕竟考研什么的，而且从小到大，也就数学成绩能拿的出手了，呵呵，然后就是语言基础，python是肯定要学的，然后是机器学习的相关理论，这些都是要看书的啊，感觉自己看教学视频还是不适合，相比之下，一遍看书，一遍看电视剧或者电影可能更适合自己啊，效果也还不错（这个月刷了多少电视剧来着，风云系列、猎场、相爱十年，有的都特么刷好几遍了）</p>
 <p>接下里还要看哪些书呢，工作方面，当前还有个javascript，在下面一个月内与论文写作穿插进行吧，前端方面还差个oracle，jsp和spring，oracle这个就先不要系统的去学了，学下jsp和spring，跟着书练习两个小项目中间需要与数据库交互时，再针对性的看oracle或mysql吧，重点关注数据的增删查改，练习掌握基本的sql语句，作好整理、笔记，把知识点整理成md传上来；然后把java第二次再过一遍，这一遍穿插数据结构和算法，用java来实现</p>
-<div id="aplayer1" class="aplayer" style="margin-bottom: 20px;"></div>
+<div id="aplayer4" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer1"),
+				element: document.getElementById("aplayer4"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -460,10 +460,10 @@ table-layout                                    设置显示单元、行和列�
     <entry>
       <title><![CDATA[CSS基础教程]]></title>
       <url>/2017/11/27/CSS%E7%9F%A5%E8%AF%86%E6%A6%82%E8%A6%81/</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="aplayer2" class="aplayer" style="margin-bottom: 20px;"></div>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer2"),
+				element: document.getElementById("aplayer0"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -485,10 +485,10 @@ table-layout                                    设置显示单元、行和列�
 </ul>
 <p>例如，将h1元素内的文字颜色定义为红色，同时将字体大小设置为14像素<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">h1&#123;<span class="attr">color</span>:red;font-size:<span class="number">14</span>px&#125;</span><br><span class="line">p&#123;color:#ff0000&#125;</span><br></pre></td></tr></table></figure></p>
 <p>当值value为若干单词时，要给值加双引号<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;font-family:<span class="string">"sans serif"</span>&#125;</span><br></pre></td></tr></table></figure></p>
-<p>多重说明<br>p{<br>    text-align: center;<br>    color: black;<br>    font-family: arial;<br>}<br><div id="aplayer3" class="aplayer" style="margin-bottom: 20px;"></div>
+<p>多重说明<br>p{<br>    text-align: center;<br>    color: black;<br>    font-family: arial;<br>}<br><div id="aplayer1" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer3"),
+				element: document.getElementById("aplayer1"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -891,10 +891,10 @@ form elements
       <url>/2017/11/23/Java-web%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E5%AE%9E%E4%BE%8B/</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>实现简单的用户登录网站，具体功能有：提供一个登录界面（Login）,包括用户名，密码等；然后验证用户输入的信息是否正确（LoginCl），如果正确，跳转提示登录成功的界面；错误则返回到登录界面<br><a id="more"></a><br>主要知识点：页面的跳转</p>
 <h1 id="登录界面-Login-java-：通过html的方式实现，代码如下："><a href="#登录界面-Login-java-：通过html的方式实现，代码如下：" class="headerlink" title="登录界面(Login.java)：通过html的方式实现，代码如下："></a>登录界面(Login.java)：通过html的方式实现，代码如下：</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.zy.firstWeb;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.PrintWriter;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Login</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//处理get请求</span></span><br><span class="line">	<span class="comment">//req:用于获得客户端（浏览器）的信息</span></span><br><span class="line">	<span class="comment">//res:用于向客户端（浏览器）返回信息</span></span><br><span class="line">		</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req,HttpServletResponse res)</span></span>&#123;</span><br><span class="line">	<span class="comment">//业务逻辑</span></span><br><span class="line">			</span><br><span class="line">		<span class="keyword">try</span>&#123;</span><br><span class="line">				</span><br><span class="line">			<span class="comment">//中文乱码</span></span><br><span class="line">			res.setContentType(<span class="string">"text/html;charset=gbk"</span>);</span><br><span class="line">			PrintWriter pw=res.getWriter();</span><br><span class="line">			</span><br><span class="line">		</span><br><span class="line">			<span class="comment">//返回登录界面</span></span><br><span class="line">			pw.println(<span class="string">"&lt;html&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;body&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;h1&gt;登录界面&lt;h1&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;form action=servlet/LoginCI method=post&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"用户名:&lt;input type=text name=usrname&gt;&lt;br&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"密码:&lt;input type=password name=passwd&gt;&lt;br&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;input type=submit value=loing&gt;&lt;br&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;/form&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;/body&gt;"</span>);</span><br><span class="line">			pw.println(<span class="string">"&lt;/html&gt;"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">catch</span>(Exception ex)&#123;</span><br><span class="line">				ex.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	<span class="comment">//处理post请求</span></span><br><span class="line">	<span class="comment">//req:用于获得客户端（浏览器）的信息</span></span><br><span class="line">	<span class="comment">//res:用于向客户端（浏览器）返回信息</span></span><br><span class="line">		</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req,HttpServletResponse res)</span></span>&#123;</span><br><span class="line">		<span class="comment">//用this传给get方法</span></span><br><span class="line">		<span class="keyword">this</span>.doGet(req,res);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<div id="aplayer4" class="aplayer" style="margin-bottom: 20px;"></div>
+<div id="aplayer5" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer4"),
+				element: document.getElementById("aplayer5"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -993,10 +993,10 @@ form elements
                                                                                   数据库
 
                                           CGI的操作过程
-</code></pre><p>类比java程序，CGI程序的语言主要有两种Perl和shell脚本(java，c，c++均可)，CGI可以访问存储数据库中的数据或者其他系统中的文件，实现动态生成效果。<br>不足之处：<br>    每个请求均需要启动一个可执行的CGI程序，如果请求频繁。。。<br>    为了解决这个问题，改进的CGI诞生了，即所谓的Java Servert，本质上是程序（在Java中程序是以类为单位的，没毛病吧？，这其实也是servert比CGI的高明之处，CGI有点像面向过程，而Servlet面向对象，可供多个对象同时调用），用于处理来自浏览器的指令（网址），并向浏览器输出html代码，该程序提供了多种类及其方法却没有main方法，所以不能主动执行，由web服务器如（Tomcat）调用Servlet的中的方法来实现。<br><div id="aplayer5" class="aplayer" style="margin-bottom: 20px;"></div>
+</code></pre><p>类比java程序，CGI程序的语言主要有两种Perl和shell脚本(java，c，c++均可)，CGI可以访问存储数据库中的数据或者其他系统中的文件，实现动态生成效果。<br>不足之处：<br>    每个请求均需要启动一个可执行的CGI程序，如果请求频繁。。。<br>    为了解决这个问题，改进的CGI诞生了，即所谓的Java Servert，本质上是程序（在Java中程序是以类为单位的，没毛病吧？，这其实也是servert比CGI的高明之处，CGI有点像面向过程，而Servlet面向对象，可供多个对象同时调用），用于处理来自浏览器的指令（网址），并向浏览器输出html代码，该程序提供了多种类及其方法却没有main方法，所以不能主动执行，由web服务器如（Tomcat）调用Servlet的中的方法来实现。<br><div id="aplayer3" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer5"),
+				element: document.getElementById("aplayer3"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -1029,6 +1029,44 @@ form elements
             <tag> CGI </tag>
             
             <tag> Servlet </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[。。。]]></title>
+      <url>/2017/11/19/2017119/</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>&#160; &#160; &#160; &#160;有点无奈，有点不甘心，还有点心疼，特么的，自己将来有一天肯定会后悔的，看来还是太闲了<br><a id="more"></a><br>&#160; &#160; &#160; &#160;呵呵，现在还看我博客的都是真爱粉啊，估计是自说自话吧，访客数量都没增加，还有哪位老铁在看的，可以用手机访问，多刷几次首页，貌似可以增加访客数量，让我知道有人在看，这块以后就不更了，会发点技术方面的干货，不过还是随便发恼骚，扯淡好写，其实我也想搞个留言板或者分享链接什么的，可惜现阶段水平不到家，就先搁置吧 。。。。<br><div id="aplayer2" class="aplayer" style="margin-bottom: 20px;"></div>
+		<script>
+			new APlayer({
+				element: document.getElementById("aplayer2"),
+				narrow: false,
+				autoplay: true,
+				showlrc: 0,
+				music: {
+					title: "风云",
+					author: "屠洪刚",
+					url: "http://ozjh9fb7b.bkt.clouddn.com/%E5%B1%A0%E6%B4%AA%E5%88%9A%20-%20%E9%A3%8E%E4%BA%91.mp3",
+					pic: "",
+				}
+			});
+		</script><br>&#160; &#160; &#160; &#160;有点发低烧，怕冷，书书看不进去就先回来了，本来还要去做实验的，后来接到通知今晚不做了，意外的惊喜啊，今天写点什么呢，说说找工作的情况吧</p>
+<p>&#160; &#160; &#160; &#160;什么专业？热能与动力工程，本来打算按照实验室的惯例找热设计相关的工作（主要从事电子设备散热相关），这块需求主要有通信电子设备，新能源和一些车企，其实很少有公司招这块的，一般招这块的公司都是比较牛逼的公司，小公司压根温饱都没解决，哪顾得上热设计这种部分单独招人啊<br>&#160; &#160; &#160; &#160;有人说去华为啊，中兴啊，是啊，我也想去啊，然而想去？不是你想去，想去就能去的哈，人家不要啊，后来想想也对，热能与动力工程全国每年那么多毕业生，就热设计这块远远供大于求了，作为企业，自然是“好”的捡好的跳啊，先看学校，再看项目，个人觉得项目要重于学校，关键自己手上确实没有能拿得出手的项目啊，而作为这块，企业更倾向于招进去了就可以上手做了。。。<br>&#160; &#160; &#160; &#160;其实我投的简历并不多，而且投了之后基本山都收到面试了，细数一下，投了可能都不超过十家，投的都是不太起眼的公司，因为前面吃了亏啊，凡是主招咱们专业的，宣讲会基本上都爆满了，对，全是咱们专业的，呵呵，不恰当的比喻，感觉有点像“狗抢食”，像我这只本科出生不好的狗往往连简历筛选关都过不了啊，这种情况投了两三次后，我特么醒悟了，就咱们专业，而大多数人都没有相关的实习，所以用人单位看学历、看出身是最高效，也是保险的做法。嗯，在咱们学校，我玩不过你们啊，所以我把爪子伸向了南京周边高校，嘿嘿，效果还是很明显的啊，至少投了基本上都让去面试了，而且都到了谈工资的份上了，然后在等通知的过程中都渐渐的黄了。。。后来跟别人交流，可能工资期望值过高是一个重要的原因，唉，毕竟是传统行业嘛。。。。<br>&#160; &#160; &#160; &#160;虽然嘴硬，虽然自己也并不咋地，虽然。。。。但其实我特么还是挺挑的，省外的基本上不考虑，省内也只考虑苏锡常，省外只考虑杭州，其实当时想去杭州的，有点没想到的是，喜欢的那个人暑假期间在浙大发了个朋友圈，无奈当时，心都凉半截了，不过当时还是有点。。。说不上来，反正觉得三观很合啊，很有缘分啊，唉，感觉本来有机会的啊，奈何被自己搞砸了，不知道自己当时在想什么。。。<br>&#160; &#160; &#160; &#160;有的时候觉得找工作和找女朋友很像啊，都要双方都看得上眼，奈何我这个自身实力不咋地还特么挑，找的到就怪了。。。我没有像身边的很多同学那样海投，即使海投中了，不喜欢的企业，我也绝不会，其实当时有点王八吃秤砣，铁了心了，这找工作和找对象能特么一样吗，手上多几个offer总归是好的，这说明自己比较优秀，找对象，多找几个，那是人品有问题。。。是吧，所以在自己喜欢的工作不要自己或者晾着自己等消息时，还要继续捕捞啊，小鱼小虾啥的，先抓只在手上啊。。。<br>&#160; &#160; &#160; &#160;苏州一次（苏州那次是在他们去苏州时，真的让那个谁又说中了，早知道跟他们去苏州了），无锡一次，这两次我都没有通过校招，都给offer了，感觉自己还是要折腾啊，无锡这份工作，虽然起薪不高，但是我很喜欢，所以我当下就决定了，难得人家不嫌弃咱半路出家的，愿意给个机会，真的挺感激的，当时HR还担心被放鸽子，我回到学校拿到三方就寄出去了，平台还算不错吧，先辛辛苦苦干个两年吧，充实自己，然后在考虑其他。。。当时这么想的，确实过程确实是有点难，不过没关系，只要能够预见到结果，我愿意去努力，去尝试的。。。<br>&#160; &#160; &#160; &#160;工作定了，现在又要考虑个人问题了，呵呵，好难，感觉比找工作难多了，感觉现阶段的运气被这份工作耗光了都，每次说到这个话题，我还是会第一时间想到你，其实也挺怪的，其实我们单独相处的时间并不长啊，（当然当时也不长，当时也是脑袋一拍就约看电影了，不知道哪来的勇气都），自暑假后，我以为我们之间会隔着千山万水。。。如果你能找到一个真心喜欢你的和你真心希望的，(其实操场上那次那家伙应该还不错的，反正我是自愧不如)我也就甘心了（我特么有这么伟大吗），还有一层原因，不想依赖实验室这层关系，半点都不想，我不想今后的生活绑着一些无关的东西，要苟延残喘的去迎合。。。好吧，又死心眼了，可能离开这儿后慢慢就会好了，就这样吧，长这么大，头一次喜欢一个人这么久，还是想对你好，只是终究名不正言不顺。。。其实除了你那届的，实验室其他的小伙伴都知道我约你看电影的事了，撞见那谁谁了，感觉自己确实不适合干坏事，第一次就败露了，还是感谢小伙伴的，都有意撮合过，只是你不知道，如果注定看不到结果，那就保持原来的样子吧。（感觉自己这个想法很危险啊，感觉是把将来别人介绍、相亲这条路给堵死了啊）。。。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 生活杂感 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 恼骚 </tag>
+            
+            <tag> 无病呻吟 </tag>
             
         </tags>
         
@@ -1070,44 +1108,6 @@ form elements
             <tag> 前端开发 </tag>
             
             <tag> 框架 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[。。。]]></title>
-      <url>/2017/11/19/2017119/</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>&#160; &#160; &#160; &#160;有点无奈，有点不甘心，还有点心疼，特么的，自己将来有一天肯定会后悔的，看来还是太闲了<br><a id="more"></a><br>&#160; &#160; &#160; &#160;呵呵，现在还看我博客的都是真爱粉啊，估计是自说自话吧，访客数量都没增加，还有哪位老铁在看的，可以用手机访问，多刷几次首页，貌似可以增加访客数量，让我知道有人在看，这块以后就不更了，会发点技术方面的干货，不过还是随便发恼骚，扯淡好写，其实我也想搞个留言板或者分享链接什么的，可惜现阶段水平不到家，就先搁置吧 。。。。<br><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
-		<script>
-			new APlayer({
-				element: document.getElementById("aplayer0"),
-				narrow: false,
-				autoplay: true,
-				showlrc: 0,
-				music: {
-					title: "风云",
-					author: "屠洪刚",
-					url: "http://ozjh9fb7b.bkt.clouddn.com/%E5%B1%A0%E6%B4%AA%E5%88%9A%20-%20%E9%A3%8E%E4%BA%91.mp3",
-					pic: "",
-				}
-			});
-		</script><br>&#160; &#160; &#160; &#160;有点发低烧，怕冷，书书看不进去就先回来了，本来还要去做实验的，后来接到通知今晚不做了，意外的惊喜啊，今天写点什么呢，说说找工作的情况吧</p>
-<p>&#160; &#160; &#160; &#160;什么专业？热能与动力工程，本来打算按照实验室的惯例找热设计相关的工作（主要从事电子设备散热相关），这块需求主要有通信电子设备，新能源和一些车企，其实很少有公司招这块的，一般招这块的公司都是比较牛逼的公司，小公司压根温饱都没解决，哪顾得上热设计这种部分单独招人啊<br>&#160; &#160; &#160; &#160;有人说去华为啊，中兴啊，是啊，我也想去啊，然而想去？不是你想去，想去就能去的哈，人家不要啊，后来想想也对，热能与动力工程全国每年那么多毕业生，就热设计这块远远供大于求了，作为企业，自然是“好”的捡好的跳啊，先看学校，再看项目，个人觉得项目要重于学校，关键自己手上确实没有能拿得出手的项目啊，而作为这块，企业更倾向于招进去了就可以上手做了。。。<br>&#160; &#160; &#160; &#160;其实我投的简历并不多，而且投了之后基本山都收到面试了，细数一下，投了可能都不超过十家，投的都是不太起眼的公司，因为前面吃了亏啊，凡是主招咱们专业的，宣讲会基本上都爆满了，对，全是咱们专业的，呵呵，不恰当的比喻，感觉有点像“狗抢食”，像我这只本科出生不好的狗往往连简历筛选关都过不了啊，这种情况投了两三次后，我特么醒悟了，就咱们专业，而大多数人都没有相关的实习，所以用人单位看学历、看出身是最高效，也是保险的做法。嗯，在咱们学校，我玩不过你们啊，所以我把爪子伸向了南京周边高校，嘿嘿，效果还是很明显的啊，至少投了基本上都让去面试了，而且都到了谈工资的份上了，然后在等通知的过程中都渐渐的黄了。。。后来跟别人交流，可能工资期望值过高是一个重要的原因，唉，毕竟是传统行业嘛。。。。<br>&#160; &#160; &#160; &#160;虽然嘴硬，虽然自己也并不咋地，虽然。。。。但其实我特么还是挺挑的，省外的基本上不考虑，省内也只考虑苏锡常，省外只考虑杭州，其实当时想去杭州的，有点没想到的是，喜欢的那个人暑假期间在浙大发了个朋友圈，无奈当时，心都凉半截了，不过当时还是有点。。。说不上来，反正觉得三观很合啊，很有缘分啊，唉，感觉本来有机会的啊，奈何被自己搞砸了，不知道自己当时在想什么。。。<br>&#160; &#160; &#160; &#160;有的时候觉得找工作和找女朋友很像啊，都要双方都看得上眼，奈何我这个自身实力不咋地还特么挑，找的到就怪了。。。我没有像身边的很多同学那样海投，即使海投中了，不喜欢的企业，我也绝不会，其实当时有点王八吃秤砣，铁了心了，这找工作和找对象能特么一样吗，手上多几个offer总归是好的，这说明自己比较优秀，找对象，多找几个，那是人品有问题。。。是吧，所以在自己喜欢的工作不要自己或者晾着自己等消息时，还要继续捕捞啊，小鱼小虾啥的，先抓只在手上啊。。。<br>&#160; &#160; &#160; &#160;苏州一次（苏州那次是在他们去苏州时，真的让那个谁又说中了，早知道跟他们去苏州了），无锡一次，这两次我都没有通过校招，都给offer了，感觉自己还是要折腾啊，无锡这份工作，虽然起薪不高，但是我很喜欢，所以我当下就决定了，难得人家不嫌弃咱半路出家的，愿意给个机会，真的挺感激的，当时HR还担心被放鸽子，我回到学校拿到三方就寄出去了，平台还算不错吧，先辛辛苦苦干个两年吧，充实自己，然后在考虑其他。。。当时这么想的，确实过程确实是有点难，不过没关系，只要能够预见到结果，我愿意去努力，去尝试的。。。<br>&#160; &#160; &#160; &#160;工作定了，现在又要考虑个人问题了，呵呵，好难，感觉比找工作难多了，感觉现阶段的运气被这份工作耗光了都，每次说到这个话题，我还是会第一时间想到你，其实也挺怪的，其实我们单独相处的时间并不长啊，（当然当时也不长，当时也是脑袋一拍就约看电影了，不知道哪来的勇气都），自暑假后，我以为我们之间会隔着千山万水。。。如果你能找到一个真心喜欢你的和你真心希望的，(其实操场上那次那家伙应该还不错的，反正我是自愧不如)我也就甘心了（我特么有这么伟大吗），还有一层原因，不想依赖实验室这层关系，半点都不想，我不想今后的生活绑着一些无关的东西，要苟延残喘的去迎合。。。好吧，又死心眼了，可能离开这儿后慢慢就会好了，就这样吧，长这么大，头一次喜欢一个人这么久，还是想对你好，只是终究名不正言不顺。。。其实除了你那届的，实验室其他的小伙伴都知道我约你看电影的事了，撞见那谁谁了，感觉自己确实不适合干坏事，第一次就败露了，还是感谢小伙伴的，都有意撮合过，只是你不知道，如果注定看不到结果，那就保持原来的样子吧。（感觉自己这个想法很危险啊，感觉是把将来别人介绍、相亲这条路给堵死了啊）。。。</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 生活杂感 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 恼骚 </tag>
-            
-            <tag> 无病呻吟 </tag>
             
         </tags>
         
