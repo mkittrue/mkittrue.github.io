@@ -81,10 +81,10 @@
 <h1 id="servlet程序"><a href="#servlet程序" class="headerlink" title="servlet程序"></a>servlet程序</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.servlet.*;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletConfig;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletResponse;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="comment">//这是我的第一个servlet，使用servlet接口的方式实现</span></span><br><span class="line"><span class="keyword">package</span> com.zy;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.*;</span><br><span class="line"><span class="keyword">import</span> java.io.*;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">	 <span class="comment">//该函数用于初始化serlvet（类似于类的构造函数</span></span><br><span class="line">	 <span class="comment">//该函数只会被调用一次（当用户第一次访问该servlet时被调用）</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(ServletConfig parm1)</span> <span class="keyword">throws</span> ServletException </span>&#123;</span><br><span class="line">		<span class="comment">// <span class="doctag">TODO:</span> Add your code here</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> ServletConfig <span class="title">getServletConfig</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="comment">// <span class="doctag">TODO:</span> Add your code here</span></span><br><span class="line">	&#125;</span><br><span class="line">	 <span class="comment">//该函数用于处理逻辑</span></span><br><span class="line">	 <span class="comment">//程序员应当将业务逻辑代码写在这里</span></span><br><span class="line">	 <span class="comment">//当用户每访问该servlet时，都会被调用</span></span><br><span class="line">	 <span class="comment">//req:用于获得客户端（浏览器）的信息</span></span><br><span class="line">	 <span class="comment">//res:用于向客户端（浏览器）返回信息</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(ServletRequest req, ServletResponse res)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//为了解其执行方式，让它在控制台打印</span></span><br><span class="line">		System.out.println(<span class="string">"service it"</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//从res中得到PrintWrite</span></span><br><span class="line">		PrintWriter pw=res.getWriter();</span><br><span class="line">		pw.println(<span class="string">"hello world"</span>);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getServletInfo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="comment">// <span class="doctag">TODO:</span> Add your code here</span></span><br><span class="line">		<span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	 <span class="comment">//销毁servlet实例（释放内存）</span></span><br><span class="line">	 <span class="comment">//1.reload改servlet</span></span><br><span class="line">	 <span class="comment">//2.关闭servlet</span></span><br><span class="line">	 <span class="comment">//3.关机</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="comment">// <span class="doctag">TODO:</span> Add your code here</span></span><br><span class="line">		System.out.println(<span class="string">"destroy"</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<div id="aplayer8" class="aplayer" style="margin-bottom: 20px;"></div>
+<div id="aplayer7" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer8"),
+				element: document.getElementById("aplayer7"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -106,7 +106,7 @@
           
           <a href="/2017/11/22/servlet开发/#comment" class="comment-link">评论</a>
           
-          <a href="javascript:share()" class="share-link bdsharebuttonbox" data-cmd="more">分享</a>	  
+          <a href="javascript:share()" class="bdsharebuttonbox" data-cmd="more">分享</a>	  
 			<script>
 			function share()
 			{
@@ -134,7 +134,7 @@
 
 
 <section id="comment">
-  <h1 class="title">Kommentare</h1>
+  <h1 class="title">Comentarios</h1>
 
  <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjczNC85Mjk1">
@@ -162,14 +162,14 @@
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="search" name="q" results="0" placeholder="Buscar">
     <input type="hidden" name="q" value="site:yoursite.com">
   </form>
 </div>
 
   
 <div class="widget tag">
-  <h3 class="title">Kategorien</h3>
+  <h3 class="title">Categorías</h3>
   <ul class="entry">
   
     <li><a href="/categories/案例练习/">案例练习</a><small>1</small></li>
@@ -184,7 +184,7 @@
 
   
 <div class="widget tag">
-  <h3 class="title">Neueste Artikel</h3>
+  <h3 class="title">Entradas Recientes</h3>
   <ul class="entry">
     
       <li>
@@ -213,7 +213,7 @@
 
   
 <div class="widget tag">
-  <h3 class="title">Tags</h3>
+  <h3 class="title">Etiquetas</h3>
   <ul class="entry">
   
     <li><a href="/tags/CGI/">CGI</a><small>2</small></li>
@@ -254,7 +254,7 @@
 
   
 <div class="widget tagcloud">
-  <h3 class="title">Tag-Cloud</h3>
+  <h3 class="title">Nube de Etiquetas</h3>
   <div class="entry">
     <a href="/tags/CGI/" style="font-size: 20px;">CGI</a> <a href="/tags/CSS基础知识/" style="font-size: 10px;">CSS基础知识</a> <a href="/tags/CSS样式/" style="font-size: 10px;">CSS样式</a> <a href="/tags/Servlet/" style="font-size: 20px;">Servlet</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/servlet开发/" style="font-size: 10px;">servlet开发</a> <a href="/tags/专业/" style="font-size: 10px;">专业</a> <a href="/tags/前端开发/" style="font-size: 10px;">前端开发</a> <a href="/tags/吐槽/" style="font-size: 10px;">吐槽</a> <a href="/tags/恼骚/" style="font-size: 10px;">恼骚</a> <a href="/tags/无病呻吟/" style="font-size: 10px;">无病呻吟</a> <a href="/tags/框架/" style="font-size: 10px;">框架</a> <a href="/tags/牢骚/" style="font-size: 10px;">牢骚</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a> <a href="/tags/考研/" style="font-size: 10px;">考研</a> <a href="/tags/选择/" style="font-size: 10px;">选择</a>
   </div>
